@@ -1,0 +1,1307 @@
+root@Suvidnya:~# script -a ~/git-session
+Script started, output log file is '/root/git-session'.
+root@Suvidnya:~# sudo apt get install git
+E: Invalid operation get
+root@Suvidnya:~# sudo apt install git
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+git is already the newest version (1:2.43.0-1ubuntu7.1).
+git set to manually installed.
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+root@Suvidnya:~# ls
+git-session  my-unix-session  snap
+root@Suvidnya:~# git -v
+git version 2.43.0
+root@Suvidnya:~# git config --global user.name "suvidnya-tigerA
+> ^C
+root@Suvidnya:~# git config --global user.name "suvidnya-tigerA"
+root@Suvidnya:~# git config --global user.email "suvidnya.tipre@tigeranalytics.com"
+root@Suvidnya:~# git config --global code.editor emacs
+root@Suvidnya:~# git config --list
+user.name=suvidnya-tigerA
+user.email=suvidnya.tipre@tigeranalytics.com
+code.editor=emacs
+root@Suvidnya:~# git config --global init.defaultBranch main
+root@Suvidnya:~# git config --list
+user.name=suvidnya-tigerA
+user.email=suvidnya.tipre@tigeranalytics.com
+code.editor=emacs
+init.defaultbranch=main
+root@Suvidnya:~# ls
+git-session  my-unix-session  snap
+root@Suvidnya:~# mkdir git-project
+root@Suvidnya:~# cd git-project/
+root@Suvidnya:~/git-project# git init
+Initialized empty Git repository in /root/git-project/.git/
+root@Suvidnya:~/git-project# git add *.c
+fatal: pathspec '*.c' did not match any files
+root@Suvidnya:~/git-project# git add .
+root@Suvidnya:~/git-project# git add LICENSE
+fatal: pathspec 'LICENSE' did not match any files
+root@Suvidnya:~/git-project# git commit -m "Initial project version"
+On branch main
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)
+root@Suvidnya:~/git-project# git status
+On branch main
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+root@Suvidnya:~/git-project# cd ..
+root@Suvidnya:~# git clone https://github.com/suvidnya-tigerA/git-session git-project
+fatal: destination path 'git-project' already exists and is not an empty directory.
+root@Suvidnya:~# git clone https://github.com/suvidnya-tigerA/git-session git-session-directory
+Cloning into 'git-session-directory'...
+Username for 'https://github.com': suvidnya-tigerA
+Password for 'https://suvidnya-tigerA@github.com':
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/suvidnya-tigerA/git-session/'
+root@Suvidnya:~# git clone https://github.com/suvidnya-tigerA/git-session git-session-directory
+Cloning into 'git-session-directory'...
+Username for 'https://github.com': suvidnya-tigerA
+Password for 'https://suvidnya-tigerA@github.com':
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/suvidnya-tigerA/git-session/'
+root@Suvidnya:~# git clone https://suvidnya-tigerA:<PAT>@github.com/suvidnya-tigerA/git-session git-session-directory
+Cloning into 'git-session-directory'...
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/suvidnya-tigerA/git-session/'
+root@Suvidnya:~# git clone https://suvidnya-tigerA:**********@github.com/suvidnya-tigerA/git-session git-session-directory
+Cloning into 'git-session-directory'...
+fatal: unable to access 'https://Tiger17@github.com/suvidnya-tigerA/git-session/': URL rejected: Bad hostname
+root@Suvidnya:~# ls
+git-project  git-session  my-unix-session  snap
+root@Suvidnya:~# cd git-project/
+root@Suvidnya:~/git-project# ls
+root@Suvidnya:~/git-project# cd ..
+root@Suvidnya:~# git clone "https://<PAT>@github.com/suvidnya-tigerA/git-session" git-session-clone
+Cloning into 'git-session-clone'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+root@Suvidnya:~# ls
+git-project  git-session  git-session-clone  my-unix-session  snap
+root@Suvidnya:~# cd git-session-clone/
+root@Suvidnya:~/git-session-clone# ls
+README.md
+root@Suvidnya:~# git clone "https://<PAT>@github.com/suvidnya-tigerA/git-session" git-session-clone
+Cloning into 'git-session-clone'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+root@Suvidnya:~# ls
+git-project  git-session  git-session-clone  my-unix-session  snap
+root@Suvidnya:~# cd git-session-clone/
+root@Suvidnya:~/git-session-clone# ls
+README.md
+root@Suvidnya:~/git-session-clone# cd ..
+root@Suvidnya:~# git status
+fatal: not a git repository (or any of the parent directories): .git
+root@Suvidnya:~# cd git-session-clone/
+root@Suvidnya:~/git-session-clone# git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+root@Suvidnya:~/git-session-clone# git config
+usage: git config [<options>]
+
+Config file location
+    --[no-]global         use global config file
+    --[no-]system         use system config file
+    --[no-]local          use repository config file
+    --[no-]worktree       use per-worktree config file
+    -f, --[no-]file <file>
+                          use given config file
+    --[no-]blob <blob-id> read config from given blob object
+
+Action
+    --[no-]get            get value: name [value-pattern]
+    --[no-]get-all        get all values: key [value-pattern]
+    --[no-]get-regexp     get values for regexp: name-regex [value-pattern]
+    --[no-]get-urlmatch   get value specific for the URL: section[.var] URL
+    --[no-]replace-all    replace all matching variables: name value [value-pattern]
+    --[no-]add            add a new variable: name value
+    --[no-]unset          remove a variable: name [value-pattern]
+    --[no-]unset-all      remove all matches: name [value-pattern]
+    --[no-]rename-section rename section: old-name new-name
+    --[no-]remove-section remove a section: name
+    -l, --[no-]list       list all
+    --[no-]fixed-value    use string equality when comparing values to 'value-pattern'
+    -e, --[no-]edit       open an editor
+    --[no-]get-color      find the color configured: slot [default]
+    --[no-]get-colorbool  find the color setting: slot [stdout-is-tty]
+
+Type
+    -t, --[no-]type <type>
+                          value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --bool-or-str         value is --bool or string
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --[no-]null       terminate values with NUL byte
+    --[no-]name-only      show variable names only
+    --[no-]includes       respect include directives on lookup
+    --[no-]show-origin    show origin of config (file, standard input, blob, command line)
+    --[no-]show-scope     show scope of config (worktree, local, global, system, command)
+    --[no-]default <value>
+                          with --get, use default value when missing entry
+
+root@Suvidnya:~/git-session-clone# git config --list
+user.name=suvidnya-tigerA
+user.email=suvidnya.tipre@tigeranalytics.com
+code.editor=emacs
+init.defaultbranch=main
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+remote.origin.url=https://<PAT>@github.com/suvidnya-tigerA/git-session
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.main.remote=origin
+branch.main.merge=refs/heads/main
+root@Suvidnya:~/git-session-clone# ls
+README.md
+root@Suvidnya:~/git-session-clone# echo "This repository is for test purposes" >> README.md
+root@Suvidnya:~/git-session-clone# cat README.md
+# git-sessionThis repository is for test purposes
+root@Suvidnya:~/git-session-clone# git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+root@Suvidnya:~/git-session-clone# git add README.md
+root@Suvidnya:~/git-session-clone# git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+
+root@Suvidnya:~/git-session-clone# nano testfile.txt
+root@Suvidnya:~/git-session-clone# git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        testfile.txt
+
+root@Suvidnya:~/git-session-clone# git diff
+root@Suvidnya:~/git-session-clone# git diff
+root@Suvidnya:~/git-session-clone# git commit -m "Modified Readme and added a testfile"
+[main a0ebeb7] Modified Readme and added a testfile
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+root@Suvidnya:~/git-session-clone# git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        testfile.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+root@Suvidnya:~/git-session-clone# git add testfile.txt
+root@Suvidnya:~/git-session-clone# git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   testfile.txt
+
+root@Suvidnya:~/git-session-clone# git commit -m "Adding testfile, forgot in prev commit to stage this file"
+[main ee0e93f] Adding testfile, forgot in prev commit to stage this file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 testfile.txt
+root@Suvidnya:~/git-session-clone# git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+root@Suvidnya:~/git-session-clone# git mv testfile.txt remaedfile.txt
+root@Suvidnya:~/git-session-clone# ls
+README.md  remaedfile.txt
+root@Suvidnya:~/git-session-clone# git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    testfile.txt -> remaedfile.txt
+
+root@Suvidnya:~/git-session-clone# git commit -m "renamed fiel testfile to renamedfile"
+[main 94de15f] renamed fiel testfile to renamedfile
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename testfile.txt => remaedfile.txt (100%)
+root@Suvidnya:~/git-session-clone# git status
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+root@Suvidnya:~/git-session-clone# git log
+commit 94de15fd9ff479045cde71b2a1326c2467229bd6 (HEAD -> main)
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>
+Date:   Thu Oct 3 13:36:59 2024 +0530
+
+    renamed fiel testfile to renamedfile
+
+commit ee0e93f64b9f2d261d0ec4f07395ec03f55ec0b4
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>
+Date:   Thu Oct 3 13:34:50 2024 +0530
+
+    Adding testfile, forgot in prev commit to stage this file
+
+commit a0ebeb7413b2658a9466de9cfb8c3b15905a18ed
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>
+Date:   Thu Oct 3 13:34:04 2024 +0530
+
+    Modified Readme and added a testfile
+
+commit 913a928b28e73a62fb2d3b1506f9aefbf4c61217 (origin/main, origin/HEAD)
+Author: Suvidnya Tipre <suvidnya.tipre@tigeranalytics.com>
+Date:   Thu Oct 3 13:02:28 2024 +0530
+
+    Initial commit
+root@Suvidnya:~/git-session-clone# git log -p -2
+commit 94de15fd9ff479045cde71b2a1326c2467229bd6 (HEAD -> main)
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>
+Date:   Thu Oct 3 13:36:59 2024 +0530
+
+    renamed fiel testfile to renamedfile
+
+diff --git a/testfile.txt b/remaedfile.txt
+similarity index 100%
+rename from testfile.txt
+rename to remaedfile.txt
+
+commit ee0e93f64b9f2d261d0ec4f07395ec03f55ec0b4
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>
+Date:   Thu Oct 3 13:34:50 2024 +0530
+
+    Adding testfile, forgot in prev commit to stage this file
+
+diff --git a/testfile.txt b/testfile.txt
+new file mode 100644
+index 0000000..82e1d31
+--- /dev/null
++++ b/testfile.txt
+@@ -0,0 +1 @@
++hello, this is a test file
+root@Suvidnya:~/git-session-clone# git log --stat
+commit 94de15fd9ff479045cde71b2a1326c2467229bd6 (HEAD -> main)
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>
+Date:   Thu Oct 3 13:36:59 2024 +0530
+
+    renamed fiel testfile to renamedfile
+
+ testfile.txt => remaedfile.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit ee0e93f64b9f2d261d0ec4f07395ec03f55ec0b4
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>
+Date:   Thu Oct 3 13:34:50 2024 +0530
+
+    Adding testfile, forgot in prev commit to stage this file
+
+ testfile.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit a0ebeb7413b2658a9466de9cfb8c3b15905a18ed
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>
+Date:   Thu Oct 3 13:34:04 2024 +0530
+
+    Modified Readme and added a testfile
+
+ README.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 913a928b28e73a62fb2d3b1506f9aefbf4c61217 (origin/main, origin/HEAD)
+Author: Suvidnya Tipre <suvidnya.tipre@tigeranalytics.com>
+Date:   Thu Oct 3 13:02:28 2024 +0530
+
+    Initial commit
+
+:
+    renamed fiel testfile to renamedfile
+
+ testfile.txt => remaedfile.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit ee0e93f64b9f2d261d0ec4f07395ec03f55ec0b4
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>
+Date:   Thu Oct 3 13:34:50 2024 +0530
+
+    Adding testfile, forgot in prev commit to stage this file
+
+ testfile.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit a0ebeb7413b2658a9466de9cfb8c3b15905a18ed
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>
+Date:   Thu Oct 3 13:34:04 2024 +0530
+
+    Modified Readme and added a testfile
+
+ README.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 913a928b28e73a62fb2d3b1506f9aefbf4c61217 (origin/main, origin/HEAD)
+Author: Suvidnya Tipre <suvidnya.tipre@tigeranalytics.com>
+Date:   Thu Oct 3 13:02:28 2024 +0530
+
+    Initial commit
+
+ ^X
+    renamed fiel testfile to renamedfile
+
+ testfile.txt => remaedfile.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit ee0e93f64b9f2d261d0ec4f07395ec03f55ec0b4
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>
+Date:   Thu Oct 3 13:34:50 2024 +0530
+
+    Adding testfile, forgot in prev commit to stage this file
+
+ testfile.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit a0ebeb7413b2658a9466de9cfb8c3b15905a18ed
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>
+Date:   Thu Oct 3 13:34:04 2024 +0530
+
+    Modified Readme and added a testfile
+
+ README.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 913a928b28e73a62fb2d3b1506f9aefbf4c61217 (origin/main, origin/HEAD)
+Author: Suvidnya Tipre <suvidnya.tipre@tigeranalytics.com>
+Date:   Thu Oct 3 13:02:28 2024 +0530
+
+    Initial commit
+
+:
+    renamed fiel testfile to renamedfile
+
+ testfile.txt => remaedfile.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit ee0e93f64b9f2d261d0ec4f07395ec03f55ec0b4
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>
+Date:   Thu Oct 3 13:34:50 2024 +0530
+
+    Adding testfile, forgot in prev commit to stage this file
+
+ testfile.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit a0ebeb7413b2658a9466de9cfb8c3b15905a18ed
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>
+Date:   Thu Oct 3 13:34:04 2024 +0530
+
+    Modified Readme and added a testfile
+
+ README.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 913a928b28e73a62fb2d3b1506f9aefbf4c61217 (origin/main, origin/HEAD)
+Author: Suvidnya Tipre <suvidnya.tipre@tigeranalytics.com>
+Date:   Thu Oct 3 13:02:28 2024 +0530
+
+    Initial commit
+
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)
+(END)
+ testfile.txt => remaedfile.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit ee0e93f64b9f2d261d0ec4f07395ec03f55ec0b4
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>
+Date:   Thu Oct 3 13:34:50 2024 +0530
+
+    Adding testfile, forgot in prev commit to stage this file
+
+ testfile.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit a0ebeb7413b2658a9466de9cfb8c3b15905a18ed
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>
+Date:   Thu Oct 3 13:34:04 2024 +0530
+
+    Modified Readme and added a testfile
+
+ README.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 913a928b28e73a62fb2d3b1506f9aefbf4c61217 (origin/main, origin/HEAD)
+Author: Suvidnya Tipre <suvidnya.tipre@tigeranalytics.com>
+Date:   Thu Oct 3 13:02:28 2024 +0530
+
+    Initial commit
+
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)
+(END)
+ testfile.txt => remaedfile.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit ee0e93f64b9f2d261d0ec4f07395ec03f55ec0b4
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>
+Date:   Thu Oct 3 13:34:50 2024 +0530
+
+    Adding testfile, forgot in prev commit to stage this file
+
+ testfile.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit a0ebeb7413b2658a9466de9cfb8c3b15905a18ed
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>
+Date:   Thu Oct 3 13:34:04 2024 +0530
+
+    Modified Readme and added a testfile
+
+ README.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 913a928b28e73a62fb2d3b1506f9aefbf4c61217 (origin/main, origin/HEAD)
+Author: Suvidnya Tipre <suvidnya.tipre@tigeranalytics.com>
+Date:   Thu Oct 3 13:02:28 2024 +0530
+
+    Initial commit
+
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)
+
+root@Suvidnya:~/git-session-clone# git log
+commit 94de15fd9ff479045cde71b2a1326c2467229bd6 (HEAD -> main)
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>
+Date:   Thu Oct 3 13:36:59 2024 +0530
+
+    renamed fiel testfile to renamedfile
+
+commit ee0e93f64b9f2d261d0ec4f07395ec03f55ec0b4
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>
+Date:   Thu Oct 3 13:34:50 2024 +0530
+
+    Adding testfile, forgot in prev commit to stage this file
+
+commit a0ebeb7413b2658a9466de9cfb8c3b15905a18ed
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>
+Date:   Thu Oct 3 13:34:04 2024 +0530
+
+    Modified Readme and added a testfile
+
+commit 913a928b28e73a62fb2d3b1506f9aefbf4c61217 (origin/main, origin/HEAD)
+Author: Suvidnya Tipre <suvidnya.tipre@tigeranalytics.com>
+Date:   Thu Oct 3 13:02:28 2024 +0530
+
+    Initial commit
+root@Suvidnya:~/git-session-clone# git log --pretty=oneline
+94de15fd9ff479045cde71b2a1326c2467229bd6 (HEAD -> main) renamed fiel testfile to renamedfile
+ee0e93f64b9f2d261d0ec4f07395ec03f55ec0b4 Adding testfile, forgot in prev commit to stage this file
+a0ebeb7413b2658a9466de9cfb8c3b15905a18ed Modified Readme and added a testfile
+913a928b28e73a62fb2d3b1506f9aefbf4c61217 (origin/main, origin/HEAD) Initial commit
+root@Suvidnya:~/git-session-clone# git log -S hello
+commit ee0e93f64b9f2d261d0ec4f07395ec03f55ec0b4
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>
+Date:   Thu Oct 3 13:34:50 2024 +0530
+
+    Adding testfile, forgot in prev commit to stage this file
+root@Suvidnya:~/git-session-clone# git log --renamed.txt
+fatal: unrecognized argument: --renamed.txt
+root@Suvidnya:~/git-session-clone# git log -- ./git-session-clone/renamed.txt
+root@Suvidnya:~/git-session-clone# git status
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+root@Suvidnya:~/git-session-clone# nano testfile
+root@Suvidnya:~/git-session-clone# ls
+README.md  remaedfile.txt
+root@Suvidnya:~/git-session-clone# mv remaedfile.txt
+mv: missing destination file operand after 'remaedfile.txt'
+Try 'mv --help' for more information.
+root@Suvidnya:~/git-session-clone# mv remaedfile.txt renamedfile.txt
+root@Suvidnya:~/git-session-clone# ls
+README.md  renamedfile.txt
+root@Suvidnya:~/git-session-clone# nano renamedfile.txt
+root@Suvidnya:~/git-session-clone# git status
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    remaedfile.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        renamedfile.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+root@Suvidnya:~/git-session-clone# git commit -m "false commit"
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    remaedfile.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        renamedfile.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+root@Suvidnya:~/git-session-clone# git log
+commit 94de15fd9ff479045cde71b2a1326c2467229bd6 (HEAD -> main)
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>
+Date:   Thu Oct 3 13:36:59 2024 +0530
+
+    renamed fiel testfile to renamedfile
+
+commit ee0e93f64b9f2d261d0ec4f07395ec03f55ec0b4
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>
+Date:   Thu Oct 3 13:34:50 2024 +0530
+
+    Adding testfile, forgot in prev commit to stage this file
+
+commit a0ebeb7413b2658a9466de9cfb8c3b15905a18ed
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>
+Date:   Thu Oct 3 13:34:04 2024 +0530
+
+    Modified Readme and added a testfile
+
+commit 913a928b28e73a62fb2d3b1506f9aefbf4c61217 (origin/main, origin/HEAD)
+Author: Suvidnya Tipre <suvidnya.tipre@tigeranalytics.com>
+Date:   Thu Oct 3 13:02:28 2024 +0530
+
+    Initial commit
+root@Suvidnya:~/git-session-clone# git add .
+root@Suvidnya:~/git-session-clone# git status
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    remaedfile.txt
+        new file:   renamedfile.txt
+
+root@Suvidnya:~/git-session-clone# ls
+README.md  renamedfile.txt
+root@Suvidnya:~/git-session-clone# nano README.md
+root@Suvidnya:~/git-session-clone# git commit -m "false commit"
+[main df3b219] false commit
+ 2 files changed, 4 insertions(+), 1 deletion(-)
+ delete mode 100644 remaedfile.txt
+ create mode 100644 renamedfile.txt
+root@Suvidnya:~/git-session-clone# git status
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+root@Suvidnya:~/git-session-clone# git add README.md
+root@Suvidnya:~/git-session-clone# git status
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+
+root@Suvidnya:~/git-session-clone# git commit --amend
+[main fa0e877] false commit changed to true commit
+ Date: Thu Oct 3 13:58:37 2024 +0530
+ 3 files changed, 8 insertions(+), 2 deletions(-)
+ delete mode 100644 remaedfile.txt
+ create mode 100644 renamedfile.txt
+root@Suvidnya:~/git-session-clone# git log
+commit fa0e877f8893aab2555c2655148619a02de9afb7 (HEAD -> main)
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>
+Date:   Thu Oct 3 13:58:37 2024 +0530
+
+    false commit changed to true commit
+
+commit 94de15fd9ff479045cde71b2a1326c2467229bd6
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>
+Date:   Thu Oct 3 13:36:59 2024 +0530
+
+    renamed fiel testfile to renamedfile
+
+commit ee0e93f64b9f2d261d0ec4f07395ec03f55ec0b4
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>
+Date:   Thu Oct 3 13:34:50 2024 +0530
+
+    Adding testfile, forgot in prev commit to stage this file
+
+commit a0ebeb7413b2658a9466de9cfb8c3b15905a18ed
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>
+Date:   Thu Oct 3 13:34:04 2024 +0530
+
+    Modified Readme and added a testfile
+
+commit 913a928b28e73a62fb2d3b1506f9aefbf4c61217 (origin/main, origin/HEAD)
+Author: Suvidnya Tipre <suvidnya.tipre@tigeranalytics.com>
+Date:   Thu Oct 3 13:02:28 2024 +0530
+
+    Initial commit
+root@Suvidnya:~/git-session-clone# git status
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+root@Suvidnya:~/git-session-clone# ls
+README.md  renamedfile.txt
+root@Suvidnya:~/git-session-clone# nano renamedfile.txt
+root@Suvidnya:~/git-session-clone# git add .
+root@Suvidnya:~/git-session-clone# git status
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   renamedfile.txt
+
+root@Suvidnya:~/git-session-clone# git reset HEAD renamedfile.txt
+Unstaged changes after reset:
+M       renamedfile.txt
+root@Suvidnya:~/git-session-clone# git status
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   renamedfile.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+root@Suvidnya:~/git-session-clone# git checkout -- renamedfile.txt
+root@Suvidnya:~/git-session-clone# git status
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+root@Suvidnya:~/git-session-clone# nano renamedfile.txt
+root@Suvidnya:~/git-session-clone# git status
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   renamedfile.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+root@Suvidnya:~/git-session-clone# git add renamedfile.txt
+root@Suvidnya:~/git-session-clone# git status
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   renamedfile.txt
+
+root@Suvidnya:~/git-session-clone# git restore --staged renamedfile.txt
+root@Suvidnya:~/git-session-clone# git status
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   renamedfile.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+root@Suvidnya:~/git-session-clone# git restore renamedfile.txt
+root@Suvidnya:~/git-session-clone# git status
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+root@Suvidnya:~/git-session-clone# cd ..
+root@Suvidnya:~# git remote
+fatal: not a git repository (or any of the parent directories): .git
+root@Suvidnya:~# cd git-session-clone/
+root@Suvidnya:~/git-session-clone# git remote
+origin
+root@Suvidnya:~/git-session-clone# git fetch
+root@Suvidnya:~/git-session-clone# git fetch origin
+root@Suvidnya:~/git-session-clone# git remote show origin
+* remote origin
+  Fetch URL: https://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@github.com/suvidnya-tigerA/git-session
+  Push  URL: https://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@github.com/suvidnya-tigerA/git-session
+  HEAD branch: main
+  Remote branch:
+    main tracked
+  Local branch configured for 'git pull':
+    main merges with remote main
+  Local ref configured for 'git push':
+    main pushes to main (fast-forwardable)
+root@Suvidnya:~/git-session-clone# git push remote origin
+fatal: 'remote' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+root@Suvidnya:~/git-session-clone# git push
+Enumerating objects: 14, done.
+Counting objects: 100% (14/14), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (12/12), 1.28 KiB | 656.00 KiB/s, done.
+Total 12 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/suvidnya-tigerA/git-session
+   913a928..fa0e877  main -> main
+root@Suvidnya:~/git-session-clone# git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+root@Suvidnya:~/git-session-clone# git tag
+root@Suvidnya:~/git-session-clone# git tag -a v1.0 -m "first tag"
+root@Suvidnya:~/git-session-clone# git tag
+v1.0
+root@Suvidnya:~/git-session-clone# git show v1.0
+tag v1.0
+Tagger: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>
+Date:   Thu Oct 3 14:16:29 2024 +0530
+
+first tag
+
+commit fa0e877f8893aab2555c2655148619a02de9afb7 (HEAD -> main, tag: v1.0, origin/main, origin/HEAD)
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>
+Date:   Thu Oct 3 13:58:37 2024 +0530
+
+    false commit changed to true commit
+
+diff --git a/README.md b/README.md
+index 89461d8..078e14b 100644
+--- a/README.md
++++ b/README.md
+@@ -1 +1,4 @@
+-# git-sessionThis repository is for test purposes
++# git-session
++This repository is for test purposes
++
++Checking for amend use
+diff --git a/remaedfile.txt b/remaedfile.txt
+deleted file mode 100644
+index 82e1d31..0000000
+--- a/remaedfile.txt
++++ /dev/null
+@@ -1 +0,0 @@
+-hello, this is a test file
+root@Suvidnya:~/git-session-clone# git log --pertty=oneline
+fatal: unrecognized argument: --pertty=oneline
+root@Suvidnya:~/git-session-clone# git log --pretty=oneline
+fa0e877f8893aab2555c2655148619a02de9afb7 (HEAD -> main, tag: v1.0, origin/main, origin/HEAD) false commit changed to true commit
+94de15fd9ff479045cde71b2a1326c2467229bd6 renamed fiel testfile to renamedfile
+ee0e93f64b9f2d261d0ec4f07395ec03f55ec0b4 Adding testfile, forgot in prev commit to stage this file
+a0ebeb7413b2658a9466de9cfb8c3b15905a18ed Modified Readme and added a testfile
+913a928b28e73a62fb2d3b1506f9aefbf4c61217 Initial commit
+root@Suvidnya:~/git-session-clone# git tag -a v0.0 913a92
+root@Suvidnya:~/git-session-clone# git tag
+v0.0
+v1.0
+root@Suvidnya:~/git-session-clone# git tag v0.0
+fatal: tag 'v0.0' already exists
+root@Suvidnya:~/git-session-clone# git show v0.0
+tag v0.0
+Tagger: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>
+Date:   Thu Oct 3 14:21:57 2024 +0530
+
+v0.0 tag (start)
+
+commit 913a928b28e73a62fb2d3b1506f9aefbf4c61217 (tag: v0.0)
+Author: Suvidnya Tipre <suvidnya.tipre@tigeranalytics.com>
+Date:   Thu Oct 3 13:02:28 2024 +0530
+
+    Initial commit
+
+diff --git a/README.md b/README.md
+new file mode 100644
+index 0000000..7407007
+--- /dev/null
++++ b/README.md
+@@ -0,0 +1 @@
++# git-session
+\ No newline at end of file
+root@Suvidnya:~/git-session-clone# git push origin v0.0
+Enumerating objects: 1, done.
+Counting objects: 100% (1/1), done.
+Writing objects: 100% (1/1), 175 bytes | 175.00 KiB/s, done.
+Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/suvidnya-tigerA/git-session
+ * [new tag]         v0.0 -> v0.0
+root@Suvidnya:~/git-session-clone# git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+root@Suvidnya:~/git-session-clone# git push origin v1.0
+Enumerating objects: 1, done.
+Counting objects: 100% (1/1), done.
+Writing objects: 100% (1/1), 169 bytes | 169.00 KiB/s, done.
+Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/suvidnya-tigerA/git-session
+ * [new tag]         v1.0 -> v1.0
+root@Suvidnya:~/git-session-clone# git checkout v0.0
+Note: switching to 'v0.0'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 913a928 Initial commit
+root@Suvidnya:~/git-session-clone# ls
+README.md
+root@Suvidnya:~/git-session-clone# git checkout v1.0
+Previous HEAD position was 913a928 Initial commit
+HEAD is now at fa0e877 false commit changed to true commit
+root@Suvidnya:~/git-session-clone# ls
+README.md  renamedfile.txt
+root@Suvidnya:~/git-session-clone# git branch testing
+
+it: command not found
+root@Suvidnya:~/git-session-clone# git branch testing
+root@Suvidnya:~/git-session-clone# git log
+commit fa0e877f8893aab2555c2655148619a02de9afb7 (HEAD, tag: v1.0, origin/main, origin/HEAD, testing, main)
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>
+Date:   Thu Oct 3 13:58:37 2024 +0530
+
+    false commit changed to true commit
+
+commit 94de15fd9ff479045cde71b2a1326c2467229bd6
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>
+Date:   Thu Oct 3 13:36:59 2024 +0530
+
+    renamed fiel testfile to renamedfile
+
+commit ee0e93f64b9f2d261d0ec4f07395ec03f55ec0b4
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>
+Date:   Thu Oct 3 13:34:50 2024 +0530
+
+    Adding testfile, forgot in prev commit to stage this file
+
+commit a0ebeb7413b2658a9466de9cfb8c3b15905a18ed
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>
+Date:   Thu Oct 3 13:34:04 2024 +0530
+
+    Modified Readme and added a testfile
+
+commit 913a928b28e73a62fb2d3b1506f9aefbf4c61217 (tag: v0.0)
+Author: Suvidnya Tipre <suvidnya.tipre@tigeranalytics.com>
+Date:   Thu Oct 3 13:02:28 2024 +0530
+
+    Initial commit
+root@Suvidnya:~/git-session-clone# git checkout testing
+Switched to branch 'testing'
+root@Suvidnya:~/git-session-clone# ls
+README.md  renamedfile.txt
+root@Suvidnya:~/git-session-clone# nano renamedfile.txt
+root@Suvidnya:~/git-session-clone# git commit -a -m "making a ch
+ange for new branch"
+[testing 3b73966] making a change for new branch
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+root@Suvidnya:~/git-session-clone# git status
+On branch testing
+nothing to commit, working tree clean
+root@Suvidnya:~/git-session-clone# git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+root@Suvidnya:~/git-session-clone# ls
+README.md  renamedfile.txt
+root@Suvidnya:~/git-session-clone# nano renamedfile.txt
+root@Suvidnya:~/git-session-clone# nano renamedfile.txt
+root@Suvidnya:~/git-session-clone# git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   renamedfile.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+root@Suvidnya:~/git-session-clone# git commit -a -m "testing branch merging"
+[main fd35bca] testing branch merging
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+root@Suvidnya:~/git-session-clone# git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+root@Suvidnya:~/git-session-clone# git merge testing
+Auto-merging renamedfile.txt
+CONFLICT (content): Merge conflict in renamedfile.txt
+Automatic merge failed; fix conflicts and then commit the result.
+root@Suvidnya:~/git-session-clone# git checkout main
+renamedfile.txt: needs merge
+error: you need to resolve your current index first
+root@Suvidnya:~/git-session-clone# git merge main
+error: Merging is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+root@Suvidnya:~/git-session-clone# git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   renamedfile.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+root@Suvidnya:~/git-session-clone# git add .
+root@Suvidnya:~/git-session-clone# git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+        modified:   renamedfile.txt
+
+root@Suvidnya:~/git-session-clone# git commit -m "commit for merge"
+[main ace962a] commit for merge
+root@Suvidnya:~/git-session-clone# git checkout main
+Already on 'main'
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+root@Suvidnya:~/git-session-clone# git merge testing
+Already up to date.
+root@Suvidnya:~/git-session-clone# git status
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+root@Suvidnya:~/git-session-clone# nano renamedfile.txt
+root@Suvidnya:~/git-session-clone# git branch temp
+root@Suvidnya:~/git-session-clone# git checkout temp
+Switched to branch 'temp'
+root@Suvidnya:~/git-session-clone# nano renamedfile.txt
+root@Suvidnya:~/git-session-clone# cat renamedfile.txt
+hello, this is a test file
+added this line to check working of --amend
+<<<<<<< HEAD
+this line is to test branch merging
+=======
+adding this line to test branching
+>>>>>>> testing
+this line to delete branch and see changes
+
+root@Suvidnya:~/git-session-clone# git branch -d temp
+error: cannot delete branch 'temp' used by worktree at '/root/git-session-clone'
+root@Suvidnya:~/git-session-clone# git checkout testing
+error: Your local changes to the following files would be overwritten by checkout:
+        renamedfile.txt
+Please commit your changes or stash them before you switch branches.
+Aborting
+root@Suvidnya:~/git-session-clone# git commit -a -m "commit for
+deleting this branch"
+[temp 5923c6f] commit for deleting this branch
+ 1 file changed, 1 insertion(+)
+root@Suvidnya:~/git-session-clone# git status
+On branch temp
+nothing to commit, working tree clean
+root@Suvidnya:~/git-session-clone# git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+root@Suvidnya:~/git-session-clone# git branch -d temp
+error: the branch 'temp' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D temp'
+root@Suvidnya:~/git-session-clone# git merge temp
+Updating ace962a..5923c6f
+Fast-forward
+ renamedfile.txt | 1 +
+ 1 file changed, 1 insertion(+)
+root@Suvidnya:~/git-session-clone# cat renamedfile.txt
+hello, this is a test file
+added this line to check working of --amend
+<<<<<<< HEAD
+this line is to test branch merging
+=======
+adding this line to test branching
+>>>>>>> testing
+this line to delete branch and see changes
+
+root@Suvidnya:~/git-session-clone# git branch -d temp
+Deleted branch temp (was 5923c6f).
+root@Suvidnya:~/git-session-clone# git branch
+* main
+  testing
+root@Suvidnya:~/git-session-clone# git branch -v
+* main    5923c6f [ahead 4] commit for deleting this branch
+  testing 3b73966 making a change for new branch
+root@Suvidnya:~/git-session-clone# git branch --merged
+* main
+  testing
+root@Suvidnya:~/git-session-clone# git branch --no-merged
+root@Suvidnya:~/git-session-clone# git branch --move testing tes
+tbranch
+root@Suvidnya:~/git-session-clone# git branch
+* main
+  testbranch
+root@Suvidnya:~/git-session-clone# git push --set-upstream origin testbranch
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 385 bytes | 385.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'testbranch' on GitHub by visiting:
+remote:      https://github.com/suvidnya-tigerA/git-session/pull/new/testbranch
+remote:
+To https://github.com/suvidnya-tigerA/git-session
+ * [new branch]      testbranch -> testbranch
+branch 'testbranch' set up to track 'origin/testbranch'.
+root@Suvidnya:~/git-session-clone# git status
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+root@Suvidnya:~/git-session-clone# git branch --move main master
+root@Suvidnya:~/git-session-clone# git branch
+* master
+  testbranch
+root@Suvidnya:~/git-session-clone# git push --set-upstream origi
+n master
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (9/9), 1007 bytes | 1007.00 KiB/s, done.
+Total 9 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), done.
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/suvidnya-tigerA/git-session/pull/new/master
+remote:
+To https://github.com/suvidnya-tigerA/git-session
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+root@Suvidnya:~/git-session-clone# git branch
+* master
+  testbranch
+root@Suvidnya:~/git-session-clone# git push
+Everything up-to-date
+root@Suvidnya:~/git-session-clone# git branch
+* master
+  testbranch
+root@Suvidnya:~/git-session-clone# git branch -d testbranch
+Deleted branch testbranch (was 3b73966).
+root@Suvidnya:~/git-session-clone# git branch
+* master
+root@Suvidnya:~/git-session-clone# git branch rebasetesting
+root@Suvidnya:~/git-session-clone# ls
+README.md  renamedfile.txt
+root@Suvidnya:~/git-session-clone# nano renamedfile.txt
+root@Suvidnya:~/git-session-clone# nano renamedfile.txt
+root@Suvidnya:~/git-session-clone# git checkout rebasetesting
+M       renamedfile.txt
+Switched to branch 'rebasetesting'
+root@Suvidnya:~/git-session-clone# nano renamedfile.txt
+root@Suvidnya:~/git-session-clone# git status
+On branch rebasetesting
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   renamedfile.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+root@Suvidnya:~/git-session-clone# git restore renamedfile.txt
+root@Suvidnya:~/git-session-clone# git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+root@Suvidnya:~/git-session-clone# nano renamedfile.txt
+root@Suvidnya:~/git-session-clone# git checkout master
+Already on 'master'
+Your branch is up to date with 'origin/master'.
+root@Suvidnya:~/git-session-clone# nano rena
+root@Suvidnya:~/git-session-clone# nano renamedfile.txt
+root@Suvidnya:~/git-session-clone# nano renamedfile.txt
+root@Suvidnya:~/git-session-clone# git commit -a -m "to check rebasing"
+[master 15d84c6] to check rebasing
+ 1 file changed, 2 insertions(+)
+root@Suvidnya:~/git-session-clone# git checkout rebasetesting
+Switched to branch 'rebasetesting'
+root@Suvidnya:~/git-session-clone# nano renamedfile.txt
+root@Suvidnya:~/git-session-clone# nano renamedfile.txt
+root@Suvidnya:~/git-session-clone# git rebase master
+error: cannot rebase: You have unstaged changes.
+error: Please commit or stash them.
+root@Suvidnya:~/git-session-clone# git commit -a -m "rebase test
+ing"
+[rebasetesting 078541c] rebase testing
+ 1 file changed, 3 insertions(+)
+root@Suvidnya:~/git-session-clone# git rebase master
+Auto-merging renamedfile.txt
+CONFLICT (content): Merge conflict in renamedfile.txt
+error: could not apply 078541c... rebase testing
+hint: Resolve all conflicts manually, mark them as resolved with
+hint: "git add/rm <conflicted_files>", then run "git rebase --continue".
+hint: You can instead skip this commit: run "git rebase --skip".
+hint: To abort and get back to the state before "git rebase", run "git rebase --abort".
+Could not apply 078541c... rebase testing
+root@Suvidnya:~/git-session-clone# git status
+interactive rebase in progress; onto 15d84c6
+Last command done (1 command done):
+   pick 078541c rebase testing
+No commands remaining.
+You are currently rebasing branch 'rebasetesting' on '15d84c6'.
+  (fix conflicts and then run "git rebase --continue")
+  (use "git rebase --skip" to skip this patch)
+  (use "git rebase --abort" to check out the original branch)
+
+Unmerged paths:
+  (use "git restore --staged <file>..." to unstage)
+  (use "git add <file>..." to mark resolution)
+        both modified:   renamedfile.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+root@Suvidnya:~/git-session-clone# git add .
+root@Suvidnya:~/git-session-clone# git commit -m "testing rebase
+"
+[detached HEAD 9c5719a] testing rebase
+ 1 file changed, 5 insertions(+)
+root@Suvidnya:~/git-session-clone# git status
+interactive rebase in progress; onto 15d84c6
+Last command done (1 command done):
+   pick 078541c rebase testing
+No commands remaining.
+You are currently editing a commit while rebasing branch 'rebasetesting' on '15d84c6'.
+  (use "git commit --amend" to amend the current commit)
+  (use "git rebase --continue" once you are satisfied with your changes)
+
+nothing to commit, working tree clean
+root@Suvidnya:~/git-session-clone# git rebase master
+fatal: It seems that there is already a rebase-merge directory, and
+I wonder if you are in the middle of another rebase.  If that is the
+case, please try
+        git rebase (--continue | --abort | --skip)
+If that is not the case, please
+        rm -fr ".git/rebase-merge"
+and run me again.  I am stopping in case you still have something
+valuable there.
+
+root@Suvidnya:~/git-session-clone# git checkout master
+Warning: you are leaving 1 commit behind, not connected to
+any of your branches:
+
+  9c5719a testing rebase
+
+If you want to keep it by creating a new branch, this may be a good time
+to do so with:
+
+ git branch <new-branch-name> 9c5719a
+
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+root@Suvidnya:~/git-session-clone# nano renamedfile.txt
+root@Suvidnya:~/git-session-clone# git checkout master
+Already on 'master'
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+root@Suvidnya:~/git-session-clone# git merge rebasetesting
+Auto-merging renamedfile.txt
+CONFLICT (content): Merge conflict in renamedfile.txt
+Automatic merge failed; fix conflicts and then commit the result.
+root@Suvidnya:~/git-session-clone# git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Last command done (1 command done):
+   pick 078541c rebase testing
+No commands remaining.
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   renamedfile.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+root@Suvidnya:~/git-session-clone# git add .
+root@Suvidnya:~/git-session-clone# git commit
+[master 147e099] Merge branch 'rebasetesting'
+root@Suvidnya:~/git-session-clone# git checkout master
+Already on 'master'
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+root@Suvidnya:~/git-session-clone# nano renamedfile.txt

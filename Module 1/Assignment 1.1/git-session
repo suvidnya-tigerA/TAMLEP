@@ -1,0 +1,1437 @@
+Script started on 2024-10-03 11:05:59+05:30 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="120" LINES="30"]
+[?2004h]0;root@Suvidnya: ~root@Suvidnya:~# sudo apt get install git
+[?2004l[1;31mE: [0mInvalid operation get[0m
+[?2004h]0;root@Suvidnya: ~root@Suvidnya:~# sudo apt install git
+[?2004lReading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 0%Reading state information... Done
+git is already the newest version (1:2.43.0-1ubuntu7.1).
+git set to manually installed.
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+[?2004h]0;root@Suvidnya: ~root@Suvidnya:~# ls
+[?2004lgit-session  my-unix-session  [0m[01;34msnap[0m
+[?2004h]0;root@Suvidnya: ~root@Suvidnya:~# git -v
+[?2004lgit version 2.43.0
+[?2004h]0;root@Suvidnya: ~root@Suvidnya:~# git congi[K[Kfg [K[Kig --global user.nae[Kme "suvidnya-tigerA
+[?2004l[?2004h> ^C[?2004l[?2004h[?2004l
+[?2004h]0;root@Suvidnya: ~root@Suvidnya:~# git config --global user.name "suvidnya-tigerA"
+[?2004l[?2004h]0;root@Suvidnya: ~root@Suvidnya:~# git config --global user.name "suvidnya-tigerA"[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kemiml [K[K[K[Kail "suvidnya.tirpe[K[K[Kpre@tigeranalytics.com"
+[?2004l[?2004h]0;root@Suvidnya: ~root@Suvidnya:~# git config --global user.email "suvidnya.tipre@tigeranalytics.com"[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcode.editor emacs
+[?2004l[?2004h]0;root@Suvidnya: ~root@Suvidnya:~# git config --list
+[?2004l[?1h=user.name=suvidnya-tigerA[m
+user.email=suvidnya.tipre@tigeranalytics.com[m
+code.editor=emacs[m
+[K[?1l>[?2004h]0;root@Suvidnya: ~root@Suvidnya:~# git config --global init.deafult[K[K[K[K[Kgau[K[K[KfaultBranch main
+[?2004l[?2004h]0;root@Suvidnya: ~root@Suvidnya:~# git config --global init.defaultBranch mainlist[K
+[?2004l[?1h=user.name=suvidnya-tigerA[m
+user.email=suvidnya.tipre@tigeranalytics.com[m
+code.editor=emacs[m
+init.defaultbranch=main[m
+[K[?1l>[?2004h]0;root@Suvidnya: ~root@Suvidnya:~# ls
+[?2004lgit-session  my-unix-session  [0m[01;34msnap[0m
+[?2004h]0;root@Suvidnya: ~root@Suvidnya:~# mkdir git-project
+[?2004l[?2004h]0;root@Suvidnya: ~root@Suvidnya:~# cd git-project/
+[?2004l[?2004h]0;root@Suvidnya: ~/git-projectroot@Suvidnya:~/git-project# git init
+[?2004lInitialized empty Git repository in /root/git-project/.git/
+[?2004h]0;root@Suvidnya: ~/git-projectroot@Suvidnya:~/git-project# git add *.c
+[?2004lfatal: pathspec '*.c' did not match any files
+[?2004h]0;root@Suvidnya: ~/git-projectroot@Suvidnya:~/git-project# git ad [Kd .
+[?2004l[?2004h]0;root@Suvidnya: ~/git-projectroot@Suvidnya:~/git-project# git add LIC[KCENSE
+[?2004lfatal: pathspec 'LICENSE' did not match any files
+[?2004h]0;root@Suvidnya: ~/git-projectroot@Suvidnya:~/git-project# git commit -m "Initial project commit"[K[K[K[K[K[K[Kversion"
+[?2004lOn branch main
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)
+[?2004h]0;root@Suvidnya: ~/git-projectroot@Suvidnya:~/git-project# git status
+[?2004lOn branch main
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+[?2004h]0;root@Suvidnya: ~/git-projectroot@Suvidnya:~/git-project# [K]0;root@Suvidnya: ~/git-projectroot@Suvidnya:~/git-project# cd ..
+[?2004l[?2004h]0;root@Suvidnya: ~root@Suvidnya:~# git clone https://github.com.[K/suvidnya-tigerA/git-session git-project
+[?2004lfatal: destination path 'git-project' already exists and is not an empty directory.
+[?2004h]0;root@Suvidnya: ~root@Suvidnya:~# git clone https://github.com/suvidnya-tigerA/git-session git-project-[K[K[K[K[K[K[K[Ksession [K-directory
+[?2004lCloning into 'git-session-directory'...
+Username for 'https://github.com': suvidnya-tigerA
+Password for 'https://suvidnya-tigerA@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/suvidnya-tigerA/git-session/'
+[?2004h]0;root@Suvidnya: ~root@Suvidnya:~# git clone https://github.com/suvidnya-tigerA/git-session git-session-directory
+[?2004lCloning into 'git-session-directory'...
+Username for 'https://github.com': ^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[B^[[B^[[B^[[B                                                suvidnya-tirpe      -tgier    iger  A
+Password for 'https://suvidnya-tigerA@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/suvidnya-tigerA/git-session/'
+[?2004h]0;root@Suvidnya: ~root@Suvidnya:~# git clone https://github.com/suvidnya-tigerA/git-session git-session-directory[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@s[1@u[1@v[1@d[1P[1@i[1@d[1@n[1@y[1@a[1@-[1@t[1@i[C[1@g[1@e[1@r[1@A[1@:[C[1@g[1@h[1@p[1@_[1@r[1@X[C[1@g[1@7[1@w[1@p[C[1@g[1@o[1@b[1@e[1@@[1@Y[1@o[1P[1@0[1@C[1@d[1@f[1@Vq@github.com/suvidnya-tigerA/git-session git-session-directory [A]0;root@Suvidnya: ~root@Suvidnya:~# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CF@github.com/suvidnya-tigerA/git-session git-session-directory[A]0;root@Suvidnya: ~root@Suvidnya:~# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ck@github.com/suvidnya-tigerA/git-session git-session-directory[A]0;root@Suvidnya: ~root@Suvidnya:~# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cj@github.com/suvidnya-tigerA/git-session git-session-directory[A]0;root@Suvidnya: ~root@Suvidnya:~# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C9@github.com/suvidnya-tigerA/git-session git-session-directory[A]0;root@Suvidnya: ~root@Suvidnya:~# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cb@github.com/suvidnya-tigerA/git-session git-session-directory[A]0;root@Suvidnya: ~root@Suvidnya:~# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cm@github.com/suvidnya-tigerA/git-session git-session-directory[A]0;root@Suvidnya: ~root@Suvidnya:~# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CS@github.com/suvidnya-tigerA/git-session git-session-directory[A]0;root@Suvidnya: ~root@Suvidnya:~# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cc@github.com/suvidnya-tigerA/git-session git-session-directory[A]0;root@Suvidnya: ~root@Suvidnya:~# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cw@github.com/suvidnya-tigerA/git-session git-session-directory[A]0;root@Suvidnya: ~root@Suvidnya:~# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cq@github.com/suvidnya-tigerA/git-session git-session-directory[A]0;root@Suvidnya: ~root@Suvidnya:~# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CW@github.com/suvidnya-tigerA/git-session git-session-directory[A]0;root@Suvidnya: ~root@Suvidnya:~# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CW@github.com/suvidnya-tigerA/git-session git-session-directory[A]0;root@Suvidnya: ~root@Suvidnya:~# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C2@github.com/suvidnya-tigerA/git-session git-session-directory[A]0;root@Suvidnya: ~root@Suvidnya:~# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C0@github.com/suvidnya-tigerA/git-session git-session-directory[A]0;root@Suvidnya: ~root@Suvidnya:~# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cn@github.com/suvidnya-tigerA/git-session git-session-directory[A]0;root@Suvidnya: ~root@Suvidnya:~# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ce@github.com/suvidnya-tigerA/git-session git-se[Csion-directory[A]0;root@Suvidnya: ~root@Suvidnya:~# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C9@github.com/suvidnya-tigerA/git-session git-session-directory[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CD@github.com/suvidnya-tigerA/git-session git-session-directory[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cg@github.com/suvidnya-tigerA/git-session git-session-directory[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lCloning into 'git-session-directory'...
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/suvidnya-tigerA/git-session/'
+[?2004h]0;root@Suvidnya: ~root@Suvidnya:~# git clone https://suvidnya-tigerA:<PAT>@github.com/suvidnya-tigerA/git-session git-session-directory[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C@github.com/suvidnya-tigerA/git-session git-[1Psession-directory[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C@github.com/suvidnya-tigerA/git-session git-s[1Pession-directory[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C@github.com/suvidnya-tigerA/git-session git-se[1Pssion-directory[A]0;root@Suvidnya: ~root@Suvidnya:~# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C@github.com/suvidnya-tigerA/git-session git-ses[C[1Pion-directory[A]0;root@Suvidnya: ~root@Suvidnya:~# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C@github.com/suvidnya-tigerA/git-session git-sess[1Pion-directory[A]0;root@Suvidnya: ~root@Suvidnya:~# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C@github.com/suvidnya-tigerA/git-session git-sessi[1Pon-directory[A]0;root@Suvidnya: ~root@Suvidnya:~# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C@github.com/suvidnya-tigerA/git-session git-sessio[1Pn-directory[A]0;root@Suvidnya: ~root@Suvidnya:~# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C@github.com/suvidnya-tigerA/git-session git-session[1P-directory[A]0;root@Suvidnya: ~root@Suvidnya:~# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C@github.com/suvidnya-tigerA/git-session git-session-[1Pdirectory[A]0;root@Suvidnya: ~root@Suvidnya:~# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C@github.com/suvidnya-tigerA/git-session git-session-d[1Pirectory[A]0;root@Suvidnya: ~root@Suvidnya:~# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C@github.com/suvidnya-tigerA/git-session git-session-di[1Prectory[A]0;root@Suvidnya: ~root@Suvidnya:~# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C@github.com/suvidnya-tigerA/git-session git-session-dir[1Pectory[A]0;root@Suvidnya: ~root@Suvidnya:~# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C@github.com/suvidnya-tigerA/git-session git-session-dire[1Pctory[A]0;root@Suvidnya: ~root@Suvidnya:~# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C@github.com/suvidnya-tigerA/git-session git-session-direc[1Ptory[A]0;root@Suvidnya: ~root@Suvidnya:~# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C@github.com/suvidnya-tigerA/git-session git-session-direct[1Pory[A]0;root@Suvidnya: ~root@Suvidnya:~# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C@github.com/suvidnya-tigerA/git-session git-session-directo[1Pry[A]0;root@Suvidnya: ~root@Suvidnya:~# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C@github.com/suvidnya-tigerA/git-session git-session-director[1Py[A]0;root@Suvidnya: ~root@Suvidnya:~# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C@github.com/suvidnya-tigerA/git-session git-session-directory[K[A]0;root@Suvidnya: ~root@Suvidnya:~# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C@github.com/suvidnya-tigerA/git-session git-session-directory [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@S[1@u[1@v[1@i[C[1@@[1@T[1@i[1@g[1@e[1@r[1@1[1@7[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lCloning into 'git-session-directory'...
+fatal: unable to access 'https://<pw>@github.com/suvidnya-tigerA/git-session/': URL rejected: Bad hostname
+[?2004h]0;root@Suvidnya: ~root@Suvidnya:~# ls
+[?2004l[0m[01;34mgit-project[0m  git-session  my-unix-session  [01;34msnap[0m
+[?2004h]0;root@Suvidnya: ~root@Suvidnya:~# cd git-project/
+[?2004l[?2004h]0;root@Suvidnya: ~/git-projectroot@Suvidnya:~/git-project# ls
+[?2004l[?2004h]0;root@Suvidnya: ~/git-projectroot@Suvidnya:~/git-project# ls
+[?2004l[?2004h]0;root@Suvidnya: ~/git-projectroot@Suvidnya:~/git-project# clear
+[?2004l[H[2J[3J[?2004h]0;root@Suvidnya: ~/git-projectroot@Suvidnya:~/git-project# clear[3Plscd git-project/ls[Kgit clone https://suvidnya-tigerA:Suvi@Tiger17@github.com/suvidnya-tigerA/git-session git-session-directory[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kghp_rXg7wpgobeY0CdfVqFkj9bmScwqWW20ne9Dg@github.com/suvidnya-tigerA/git-session git-session-directory[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C@github.com/suvidnya-tigerA/git-[1Psession[A]0;root@Suvidnya: ~/git-projectroot@Suvidnya:~/git-project# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C@github.com/suvidnya-tigerA/git-s[1Pession[A]0;root@Suvidnya: ~/git-projectroot@Suvidnya:~/git-project# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C@github.com/suvidnya-tigerA/git-se[1Pssion[A]0;root@Suvidnya: ~/git-projectroot@Suvidnya:~/git-project# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C@github.com/suvidnya-tigerA/git-ses[C[1Pion[A]0;root@Suvidnya: ~/git-projectroot@Suvidnya:~/git-project# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C@github.com/suvidnya-tigerA/git-sess[1Pion[A]0;root@Suvidnya: ~/git-projectroot@Suvidnya:~/git-project# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C@github.com/suvidnya-tigerA/git-sessi[1Pon[A]0;root@Suvidnya: ~/git-projectroot@Suvidnya:~/git-project# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C@github.com/suvidnya-tigerA/git-sessio[1Pn[A]0;root@Suvidnya: ~/git-projectroot@Suvidnya:~/git-project# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C@github.com/suvidnya-tigerA/git-session[K[A]0;root@Suvidnya: ~/git-projectroot@Suvidnya:~/git-project# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C@github.com/suvidnya-tigerA/git-session [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P@github.com/suvidnya-tigerA/git-session
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P@github.com/suvidnya-tigerA/git-session[1P@github.com/suvidnya-tigerA/git-session[1P@github.com/suvidnya-tigerA/git-session[1P@github.com/suvidnya-tigerA/git-session[1P@github.com/suvidnya-tigerA/git-session[1P@github.com/suvidnya-tigerA/git-session[1P@github.com/suvidnya-tigerA/git-session[1P@github.com/suvidnya-tigerA/git-session[1P@github.com/suvidnya-tigerA/git-session[1P@github.com/suvidnya-tigerA/git-session[1P@github.com/suvidnya-tigerA/git-session[1P@github.com/suvidnya-tigerA/git-session[1P@github.com/suvidnya-tigerA/git-session[1P@github.com/suvidnya-tigerA/git-session[1P@github.com/suvidnya-tigerA/git-session[1P@github.com/suvidnya-tigerA/git-session[1P@github.com/suvidnya-tigerA/git-session[1P@github.com/suvidnya-tigerA/git-session[1P@github.com/suvidnya-tigerA/git-session[1P@github.com/suvidnya-tigerA/git-session[1P@github.com/suvidnya-tigerA/git-session[1P@github.com/suvidnya-tigerA/git-session[1P@github.com/suvidnya-tigerA/git-session[1P@github.com/suvidnya-tigerA/git-session[1P@github.com/suvidnya-tigerA/git-session[1P@github.com/suvidnya-tigerA/git-session[1P@github.com/suvidnya-tigerA/git-session[1P@github.com/suvidnya-tigerA/git-session[1P@github.com/suvidnya-tigerA/git-session[1P@github.com/suvidnya-tigerA/git-session[1P@github.com/suvidnya-tigerA/git-session[1P@github.com/suvidnya-tigerA/git-session[1P@github.com/suvidnya-tigerA/git-session[1P@github.com/suvidnya-tigerA/git-session[1P@github.com/suvidnya-tigerA/git-session[1P@github.com/suvidnya-tigerA/git-session[1P@github.com/suvidnya-tigerA/git-session[1P@github.com/suvidnya-tigerA/git-session[1P@github.com/suvidnya-tigerA/git-session[1P@github.com/suvidnya-tigerA/git-session[1P@github.com/suvidnya-tigerA/git-session[1P@github.com/suvidnya-tigerA/git-session[1P@github.com/suvidnya-tigerA/git-session[1P@github.com/suvidnya-tigerA/git-session[1P@github.com/suvidnya-tigerA/git-session[1P@github.com/suvidnya-tigerA/git-session[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pgithub.com/suvidnya-tigerA/git-session[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lCloning into 'git-session'...
+Username for 'https://github.com': suvidnya-tigerA
+Password for 'https://suvidnya-tigerA@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/suvidnya-tigerA/git-session/'
+[?2004h]0;root@Suvidnya: ~/git-projectroot@Suvidnya:~/git-project# root@Suvidnya:~# script -a ~/git-session
+Script started, output log file is '/root/git-session'.
+root@Suvidnya:~# sudo apt get install git
+E: Invalid operation get
+root@Suvidnya:~# sudo apt install git
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+git is already the newest version (1:2.43.0-1ubuntu7.1).
+git set to manually installed.
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+root@Suvidnya:~# ls
+git-session  my-unix-session  snap
+root@Suvidnya:~# git -v
+git version 2.43.0
+root@Suvidnya:~# git config --global user.name "suvidnya-tigerA
+> ^C
+root@Suvidnya:~# git config --global user.name "suvidnya-tigerA"
+root@Suvidnya:~# git config --global user.email "suvidnya.tipre@tigeranalytics.com"
+root@Suvidnya:~# git config --global code.editor emacs
+root@Suvidnya:~# git config --list
+user.name=suvidnya-tigerA
+user.email=suvidnya.tipre@tigeranalytics.com
+code.editor=emacs
+root@Suvidnya:~# git config --global init.defaultBranch main
+root@Suvidnya:~# git config --list
+user.name=suvidnya-tigerA
+user.email=suvidnya.tipre@tigeranalytics.com
+code.editor=emacs
+init.defaultbranch=main
+root@Suvidnya:~# ls
+git-session  my-unix-session  snap
+root@Suvidnya:~# mkdir git-project
+root@Suvidnya:~# cd git-project/root@Suvidnya:~/git-project# git initInitialized empty Git repository in /root/git-project/.git/root@Suvidnya:~/git-project# git add *.cfatal: pathspec '*.c' did not match any filesroot@Suvidnya:~/git-project# git add .root@Suvidnya:~/git-project# git add LICENSEfatal: pathspec 'LICENSE' did not match any filesroot@Suvidnya:~/git-project# git commit -m "Initial project version"On branch mainInitial commitnothing to commit (create/copy files and use "git add" to track)root@Suvidnya:~/git-project# git statusOn branch mainNo commits yetnothing to commit (create/copy files and use "git add" to track)[7mroot@Suvidnya:~/git-project# cd ..[27m[7mroot@Suvidnya:~# git clone https://github.com/suvidnya-tigerA/git-session git-project[27m[7mfatal: destination path 'git-project' already exists and is not an empty directory.[27m[7mroot@Suvidnya:~# git clone https://github.com/suvidnya-tigerA/git-session git-session-directory[27m[7mCloning into 'git-session-directory'...[27m[7mUsername for 'https://github.com': suvidnya-tigerA[27m[7mPassword for 'https://suvidnya-tigerA@github.com':[27m[7mremote: Support for password authentication was removed on August 13, 2021.[27m[7mremote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for[27m[7m information on currently recommended modes of authentication.[27m[7mfatal: Authentication failed for 'https://github.com/suvidnya-tigerA/git-session/'[27m[7mroot@Suvidnya:~# git clone https://github.com/suvidnya-tigerA/git-session git-session-directory[27m[7mCloning into 'git-session-directory'...[27m[7mUsername for 'https://github.com': suvidnya-tigerA[27m[7mPassword for 'https://suvidnya-tigerA@github.com':[27m[7mremote: Support for password authentication was removed on August 13, 2021.[27m[7mremote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for[27m[7m information on currently recommended modes of authentication.[27m[7mfatal: Authentication failed for 'https://github.com/suvidnya-tigerA/git-session/'[27m[7mroot@Suvidnya:~# git clone https://suvidnya-tigerA:ghp_rXg7wpgobeY0CdfVqFkj9bmScwqWW20ne9Dg@github.com/suvidnya-tigerA/git-session gi[27m[7mt-session-directory[27m[7mCloning into 'git-session-directory'...[27m[7mremote: Invalid username or password.[27m[7mfatal: Authentication failed for 'https://github.com/suvidnya-tigerA/git-session/'[27m[7mroot@Suvidnya:~# git clone https://suvidnya-tigerA:Suvi@Tiger17@github.com/suvidnya-tigerA/git-session git-session-directory[27m[7mCloning into 'git-session-directory'...[27m[7mfatal: unable to access 'https://Tiger17@github.com/suvidnya-tigerA/git-session/': URL rejected: Bad hostname[27m[7mroot@Suvidnya:~# ls[27m[7mgit-project  git-session  my-unix-session  snap[27m[7mroot@Suvidnya:~# cd git-project/[27m[7mroot@Suvidnya:~/git-project# ls[27m[7mroot@Suvidnya:~/git-project# ls[27m[7mroot@Suvidnya:~/git-project#[27m^C[?2004l[?2004h[?2004l
+[?2004h]0;root@Suvidnya: ~/git-projectroot@Suvidnya:~/git-project# clear
+[?2004l[H[2J[3J[?2004h]0;root@Suvidnya: ~/git-projectroot@Suvidnya:~/git-project# cleargit clone https://github.com/suvidnya-tigerA/git-session
+[?2004lCloning into 'git-session'...
+Username for 'https://github.com': suvidna ya-tigerA
+Password for 'https://suvidnya-tigerA@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/suvidnya-tigerA/git-session/'
+[?2004h]0;root@Suvidnya: ~/git-projectroot@Suvidnya:~/git-project# root@Suvidnya:~# script -a ~/git-session
+Script started, output log file is '/root/git-session'.
+root@Suvidnya:~# sudo apt get install git
+E: Invalid operation get
+root@Suvidnya:~# sudo apt install git
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+git is already the newest version (1:2.43.0-1ubuntu7.1).
+git set to manually installed.
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+root@Suvidnya:~# ls
+git-session  my-unix-session  snap
+root@Suvidnya:~# git -v
+git version 2.43.0
+root@Suvidnya:~# git config --global user.name "suvidnya-tigerA
+> ^C
+root@Suvidnya:~# git config --global user.name "suvidnya-tigerA"
+root@Suvidnya:~# git config --global user.email "suvidnya.tipre@tigeranalytics.com"
+root@Suvidnya:~# git config --global code.editor emacs
+root@Suvidnya:~# git config --list
+user.name=suvidnya-tigerA
+user.email=suvidnya.tipre@tigeranalytics.com
+code.editor=emacs
+root@Suvidnya:~# git config --global init.defaultBranch main
+root@Suvidnya:~# git config --list
+user.name=suvidnya-tigerA
+user.email=suvidnya.tipre@tigeranalytics.com
+code.editor=emacs
+init.defaultbranch=main
+root@Suvidnya:~# ls
+git-session  my-unix-session  snap
+root@Suvidnya:~# mkdir git-project
+root@Suvidnya:~# cd git-project/root@Suvidnya:~/git-project# git initInitialized empty Git repository in /root/git-project/.git/root@Suvidnya:~/git-project# git add *.cfatal: pathspec '*.c' did not match any filesroot@Suvidnya:~/git-project# git add .root@Suvidnya:~/git-project# git add LICENSEfatal: pathspec 'LICENSE' did not match any filesroot@Suvidnya:~/git-project# git commit -m "Initial project version"On branch mainInitial commitnothing to commit (create/copy files and use "git add" to track)root@Suvidnya:~/git-project# git statusOn branch mainNo commits yetnothing to commit (create/copy files and use "git add" to track)[7mroot@Suvidnya:~/git-project# cd ..[27m[7mroot@Suvidnya:~# git clone https://github.com/suvidnya-tigerA/git-session git-project[27m[7mfatal: destination path 'git-project' already exists and is not an empty directory.[27m[7mroot@Suvidnya:~# git clone https://github.com/suvidnya-tigerA/git-session git-session-directory[27m[7mCloning into 'git-session-directory'...[27m[7mUsername for 'https://github.com': suvidnya-tigerA[27m[7mPassword for 'https://suvidnya-tigerA@github.com':[27m[7mremote: Support for password authentication was removed on August 13, 2021.[27m[7mremote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for[27m[7m information on currently recommended modes of authentication.[27m[7mfatal: Authentication failed for 'https://github.com/suvidnya-tigerA/git-session/'[27m[7mroot@Suvidnya:~# git clone https://github.com/suvidnya-tigerA/git-session git-session-directory[27m[7mCloning into 'git-session-directory'...[27m[7mUsername for 'https://github.com': suvidnya-tigerA[27m[7mPassword for 'https://suvidnya-tigerA@github.com':[27m[7mremote: Support for password authentication was removed on August 13, 2021.[27m[7mremote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for[27m[7m information on currently recommended modes of authentication.[27m[7mfatal: Authentication failed for 'https://github.com/suvidnya-tigerA/git-session/'[27m[7mroot@Suvidnya:~# git clone https://suvidnya-tigerA:ghp_rXg7wpgobeY0CdfVqFkj9bmScwqWW20ne9Dg@github.com/suvidnya-tigerA/git-session gi[27m[7mt-session-directory[27m[7mCloning into 'git-session-directory'...[27m[7mremote: Invalid username or password.[27m[7mfatal: Authentication failed for 'https://github.com/suvidnya-tigerA/git-session/'[27m[7mroot@Suvidnya:~# git clone https://suvidnya-tigerA:Suvi@Tiger17@github.com/suvidnya-tigerA/git-session git-session-directory[27m[7mCloning into 'git-session-directory'...[27m[7mfatal: unable to access 'https://Tiger17@github.com/suvidnya-tigerA/git-session/': URL rejected: Bad hostname[27m[7mroot@Suvidnya:~# ls[27m[7mgit-project  git-session  my-unix-session  snap[27m[7mroot@Suvidnya:~# cd git-project/[27m[7mroot@Suvidnya:~/git-project# ls[27m[7mroot@Suvidnya:~/git-project# ls[27m[7mroot@Suvidnya:~/git-project#[27m^C[?2004l[?2004h[?2004l
+[?2004h]0;root@Suvidnya: ~/git-projectroot@Suvidnya:~/git-project# clear
+[?2004l[H[2J[3J[?2004h]0;root@Suvidnya: ~/git-projectroot@Suvidnya:~/git-project# cd ..
+[?2004l[?2004h]0;root@Suvidnya: ~root@Suvidnya:~# ls
+[?2004l[0m[01;34mgit-project[0m  git-session  my-unix-session  [01;34msnap[0m
+[?2004h]0;root@Suvidnya: ~root@Suvidnya:~# clear
+[?2004l[H[2J[3J[?2004h]0;root@Suvidnya: ~root@Suvidnya:~# clear[3Plscd ..leargit clone https://github.com/suvidnya-tigerA/git-session
+[?2004lfatal: destination path 'git-session' already exists and is not an empty directory.
+[?2004h]0;root@Suvidnya: ~root@Suvidnya:~# git clone https://github.com/suvidnya-tigerA/git-session""https://github.com/suvidnya-tigerA/git-session"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lfatal: destination path 'git-session' already exists and is not an empty directory.
+[?2004h]0;root@Suvidnya: ~root@Suvidnya:~# ls
+[?2004l[0m[01;34mgit-project[0m  git-session  my-unix-session  [01;34msnap[0m
+[?2004h]0;root@Suvidnya: ~root@Suvidnya:~# lsgit clone "https://github.com/suvidnya-tigerA/git-session" git-session-clone[K[K[K[K[K[K[K[K[K[K[K[Ks[Kession [K-clone
+[?2004lCloning into 'git-session-clone'...
+Username for 'https://github.com': suvidnya-tigerA
+Password for 'https://suvidnya-tigerA@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/suvidnya-tigerA/git-session/'
+[?2004h]0;root@Suvidnya: ~root@Suvidnya:~# clear
+[?2004l[H[2J[3J[?2004h]0;root@Suvidnya: ~root@Suvidnya:~# cleargit clone "https://github.com/suvidnya-tigerA/git-session" git-session-clone[C[7m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[27mgithub.com/suvidnya-tigerA/git-session" git-session-clone [A]0;root@Suvidnya: ~root@Suvidnya:~# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C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@github.com/suvidnya-tigerA/git-session" git-session-clone[A]0;root@Suvidnya: ~root@Suvidnya:~# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C
+[?2004lCloning into 'git-session-clone'...
+remote: Enumerating objects: 3, done.[K
+remote: Counting objects:  33% (1/3)[Kremote: Counting objects:  66% (2/3)[Kremote: Counting objects: 100% (3/3)[Kremote: Counting objects: 100% (3/3), done.[K
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)[K
+Receiving objects:  33% (1/3)Receiving objects:  66% (2/3)Receiving objects: 100% (3/3)Receiving objects: 100% (3/3), done.
+[?2004h]0;root@Suvidnya: ~root@Suvidnya:~# ls
+[?2004l[0m[01;34mgit-project[0m  git-session  [01;34mgit-session-clone[0m  my-unix-session  [01;34msnap[0m
+[?2004h]0;root@Suvidnya: ~root@Suvidnya:~# cd git-session-clone/
+[?2004l[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# ls
+[?2004lREADME.md
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# cd ..
+[?2004l[?2004h]0;root@Suvidnya: ~root@Suvidnya:~# git stau[Ktus
+[?2004lfatal: not a git repository (or any of the parent directories): .git
+[?2004h]0;root@Suvidnya: ~root@Suvidnya:~# cd git-session-clone/
+[?2004l[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git status
+[?2004lOn branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git config
+[?2004lusage: git config [<options>]
+
+Config file location
+    --[no-]global         use global config file
+    --[no-]system         use system config file
+    --[no-]local          use repository config file
+    --[no-]worktree       use per-worktree config file
+    -f, --[no-]file <file>
+                          use given config file
+    --[no-]blob <blob-id> read config from given blob object
+
+Action
+    --[no-]get            get value: name [value-pattern]
+    --[no-]get-all        get all values: key [value-pattern]
+    --[no-]get-regexp     get values for regexp: name-regex [value-pattern]
+    --[no-]get-urlmatch   get value specific for the URL: section[.var] URL
+    --[no-]replace-all    replace all matching variables: name value [value-pattern]
+    --[no-]add            add a new variable: name value
+    --[no-]unset          remove a variable: name [value-pattern]
+    --[no-]unset-all      remove all matches: name [value-pattern]
+    --[no-]rename-section rename section: old-name new-name
+    --[no-]remove-section remove a section: name
+    -l, --[no-]list       list all
+    --[no-]fixed-value    use string equality when comparing values to 'value-pattern'
+    -e, --[no-]edit       open an editor
+    --[no-]get-color      find the color configured: slot [default]
+    --[no-]get-colorbool  find the color setting: slot [stdout-is-tty]
+
+Type
+    -t, --[no-]type <type>
+                          value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --bool-or-str         value is --bool or string
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --[no-]null       terminate values with NUL byte
+    --[no-]name-only      show variable names only
+    --[no-]includes       respect include directives on lookup
+    --[no-]show-origin    show origin of config (file, standard input, blob, command line)
+    --[no-]show-scope     show scope of config (worktree, local, global, system, command)
+    --[no-]default <value>
+                          with --get, use default value when missing entry
+
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git config --list
+[?2004l[?1h=user.name=suvidnya-tigerA[m
+user.email=suvidnya.tipre@tigeranalytics.com[m
+code.editor=emacs[m
+init.defaultbranch=main[m
+core.repositoryformatversion=0[m
+core.filemode=true[m
+core.bare=false[m
+core.logallrefupdates=true[m
+remote.origin.url=https://<PAT>@github.com/suvidnya-tigerA/git-session[m
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*[m
+branch.main.remote=origin[m
+branch.main.merge=refs/heads/main[m
+[K[?1l>[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# ls
+[?2004lREADME.md
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# [K]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# exho[K[K[Kcho "This is [K[K[Kreposirtory [K[K[K[K[K[K[Kitory is or[K[Kfor test purposes" >> Re[KEADME.md 
+[?2004l[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# ca [Kat [K[K[Kt rea[K[K[KRe[KEADME.md 
+[?2004l# git-sessionThis repository is for test purposes
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git status
+[?2004lOn branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   README.md[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git add README.md 
+[?2004l[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git stasus[K[K[Ktus
+[?2004lOn branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mmodified:   README.md[m
+
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# nano testfile.txt
+[?2004l[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;55H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 7.2                                          testfile.txt                                                    [1;119H(B[m[29d(B[0;7m^G(B[m Help[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[29;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Set Mark[30d(B[0;7m^X(B[m Exit[30;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy[2d[?12l[?25h[?25l[1;70H(B[0;7m*[119G(B[m[?12l[?25h[2dh[?25l[?12l[?25he[?25l[?12l[?25hl[?25l[?12l[?25hl[?25l[?12l[?25ho[?25l[?12l[?25h,[?25l[?12l[?25h [?25l[?12l[?25ht[?25l[?12l[?25hh[?25l[?12l[?25hi[?25l[?12l[?25hs[?25l[?12l[?25h [?25l[?12l[?25hs[?25l[?12l[?25hi[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25hi[?25l[?12l[?25hs[?25l[?12l[?25h [?25l[28d[K[?12l[?25h[2;16Ha[?25l[?12l[?25h [?25l[?12l[?25ht[?25l[?12l[?25he[?25l[?12l[?25hs[?25l[?12l[?25ht[?25l[?12l[?25hf[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25hf[?25l[?12l[?25hi[?25l[?12l[?25hl[?25l[?12l[?25he[?25l[?12l[?25h:[?25l[?12l[?25hw[?25l[?12l[?25h [?25l[?12l[?25h [?25l[28;54H(B[0;7m[ Writing... ](B[m[1;70H(B[0;7m [119G(B[m[28;53H(B[0;7m[ Wrote 1 line ](B[m[?12l[?25h[2;27H[?25l[28d[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git status
+[?2004lOn branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mmodified:   README.md[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mtestfile.txt[m
+
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git diff
+[?2004l[?1h=[K[?1l>[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git diff
+[?2004l[?1h=[K[?1l>[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git commit -m "E[KMi[Kodified Readme and added a testfile"
+[?2004l[main a0ebeb7] Modified Readme and added a testfile
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# gi [Kt ststus[K[K[K[Katus
+[?2004lOn branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mtestfile.txt[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git add testfile.txt 
+[?2004l[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git comm[K[K[K[Kstatus
+[?2004lOn branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   testfile.txt[m
+
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# fit [K[K[K[Kgit s[Kcommit -m "Didn[K[K[K[KAdding testfile, forgot i [Kn prev commit to stage this file"
+[?2004l[main ee0e93f] Adding testfile, forgot in prev commit to stage this file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 testfile.txt
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git status
+[?2004lOn branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git mv testfile.txt remaedfile.txt
+[?2004l[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# ls
+[?2004lREADME.md  remaedfile.txt
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git status
+[?2004lOn branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mrenamed:    testfile.txt -> remaedfile.txt[m
+
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# rm renma[K[Kamed[K[K[K[K[K[K[K[K[K[Kgit -[Kcommit -m "renamed fiel testfile to renamedfile"
+[?2004l[main 94de15f] renamed fiel testfile to renamedfile
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename testfile.txt => remaedfile.txt (100%)
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git status
+[?2004lOn branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git log
+[?2004l[?1h=[33mcommit 94de15fd9ff479045cde71b2a1326c2467229bd6[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m[m
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>[m
+Date:   Thu Oct 3 13:36:59 2024 +0530[m
+[m
+    renamed fiel testfile to renamedfile[m
+[m
+[33mcommit ee0e93f64b9f2d261d0ec4f07395ec03f55ec0b4[m[m
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>[m
+Date:   Thu Oct 3 13:34:50 2024 +0530[m
+[m
+    Adding testfile, forgot in prev commit to stage this file[m
+[m
+[33mcommit a0ebeb7413b2658a9466de9cfb8c3b15905a18ed[m[m
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>[m
+Date:   Thu Oct 3 13:34:04 2024 +0530[m
+[m
+    Modified Readme and added a testfile[m
+[m
+[33mcommit 913a928b28e73a62fb2d3b1506f9aefbf4c61217[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m[m
+Author: Suvidnya Tipre <suvidnya.tipre@tigeranalytics.com>[m
+Date:   Thu Oct 3 13:02:28 2024 +0530[m
+[m
+    Initial commit[m
+[K[?1l>[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git log -p -2
+[?2004l[?1h=[33mcommit 94de15fd9ff479045cde71b2a1326c2467229bd6[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m[m
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>[m
+Date:   Thu Oct 3 13:36:59 2024 +0530[m
+[m
+    renamed fiel testfile to renamedfile[m
+[m
+[1mdiff --git a/testfile.txt b/remaedfile.txt[m[m
+[1msimilarity index 100%[m[m
+[1mrename from testfile.txt[m[m
+[1mrename to remaedfile.txt[m[m
+[m
+[33mcommit ee0e93f64b9f2d261d0ec4f07395ec03f55ec0b4[m[m
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>[m
+Date:   Thu Oct 3 13:34:50 2024 +0530[m
+[m
+    Adding testfile, forgot in prev commit to stage this file[m
+[m
+[1mdiff --git a/testfile.txt b/testfile.txt[m[m
+[1mnew file mode 100644[m[m
+[1mindex 0000000..82e1d31[m[m
+[1m--- /dev/null[m[m
+[1m+++ b/testfile.txt[m[m
+[36m@@ -0,0 +1 @@[m[m
+[32m+[m[32mhello, this is a test file[m[m
+[K[?1l>[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git log --stat
+[?2004l[?1h=[33mcommit 94de15fd9ff479045cde71b2a1326c2467229bd6[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m[m
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>[m
+Date:   Thu Oct 3 13:36:59 2024 +0530[m
+[m
+    renamed fiel testfile to renamedfile[m
+[m
+ testfile.txt => remaedfile.txt | 0[m
+ 1 file changed, 0 insertions(+), 0 deletions(-)[m
+[m
+[33mcommit ee0e93f64b9f2d261d0ec4f07395ec03f55ec0b4[m[m
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>[m
+Date:   Thu Oct 3 13:34:50 2024 +0530[m
+[m
+    Adding testfile, forgot in prev commit to stage this file[m
+[m
+ testfile.txt | 1 [32m+[m[m
+ 1 file changed, 1 insertion(+)[m
+[m
+[33mcommit a0ebeb7413b2658a9466de9cfb8c3b15905a18ed[m[m
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>[m
+Date:   Thu Oct 3 13:34:04 2024 +0530[m
+[m
+    Modified Readme and added a testfile[m
+[m
+ README.md | 2 [32m+[m[31m-[m[m
+ 1 file changed, 1 insertion(+), 1 deletion(-)[m
+[m
+[33mcommit 913a928b28e73a62fb2d3b1506f9aefbf4c61217[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m[m
+Author: Suvidnya Tipre <suvidnya.tipre@tigeranalytics.com>[m
+:[K[KDate:   Thu Oct 3 13:02:28 2024 +0530[m
+:[K[K[m
+:[K[K    Initial commit[m
+:[K[K[m
+:[K[H[2J[H    renamed fiel testfile to renamedfile[m
+[m
+ testfile.txt => remaedfile.txt | 0[m
+ 1 file changed, 0 insertions(+), 0 deletions(-)[m
+[m
+[33mcommit ee0e93f64b9f2d261d0ec4f07395ec03f55ec0b4[m[m
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>[m
+Date:   Thu Oct 3 13:34:50 2024 +0530[m
+[m
+    Adding testfile, forgot in prev commit to stage this file[m
+[m
+ testfile.txt | 1 [32m+[m[m
+ 1 file changed, 1 insertion(+)[m
+[m
+[33mcommit a0ebeb7413b2658a9466de9cfb8c3b15905a18ed[m[m
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>[m
+Date:   Thu Oct 3 13:34:04 2024 +0530[m
+[m
+    Modified Readme and added a testfile[m
+[m
+ README.md | 2 [32m+[m[31m-[m[m
+ 1 file changed, 1 insertion(+), 1 deletion(-)[m
+[m
+[33mcommit 913a928b28e73a62fb2d3b1506f9aefbf4c61217[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m[m
+Author: Suvidnya Tipre <suvidnya.tipre@tigeranalytics.com>[m
+Date:   Thu Oct 3 13:02:28 2024 +0530[m
+[m
+    Initial commit[m
+[m
+:[K[K [K^X^X[H[2J[H    renamed fiel testfile to renamedfile[m
+[m
+ testfile.txt => remaedfile.txt | 0[m
+ 1 file changed, 0 insertions(+), 0 deletions(-)[m
+[m
+[33mcommit ee0e93f64b9f2d261d0ec4f07395ec03f55ec0b4[m[m
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>[m
+Date:   Thu Oct 3 13:34:50 2024 +0530[m
+[m
+    Adding testfile, forgot in prev commit to stage this file[m
+[m
+ testfile.txt | 1 [32m+[m[m
+ 1 file changed, 1 insertion(+)[m
+[m
+[33mcommit a0ebeb7413b2658a9466de9cfb8c3b15905a18ed[m[m
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>[m
+Date:   Thu Oct 3 13:34:04 2024 +0530[m
+[m
+    Modified Readme and added a testfile[m
+[m
+ README.md | 2 [32m+[m[31m-[m[m
+ 1 file changed, 1 insertion(+), 1 deletion(-)[m
+[m
+[33mcommit 913a928b28e73a62fb2d3b1506f9aefbf4c61217[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m[m
+Author: Suvidnya Tipre <suvidnya.tipre@tigeranalytics.com>[m
+Date:   Thu Oct 3 13:02:28 2024 +0530[m
+[m
+    Initial commit[m
+[m
+:[K[H[2J[H    renamed fiel testfile to renamedfile[m
+[m
+ testfile.txt => remaedfile.txt | 0[m
+ 1 file changed, 0 insertions(+), 0 deletions(-)[m
+[m
+[33mcommit ee0e93f64b9f2d261d0ec4f07395ec03f55ec0b4[m[m
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>[m
+Date:   Thu Oct 3 13:34:50 2024 +0530[m
+[m
+    Adding testfile, forgot in prev commit to stage this file[m
+[m
+ testfile.txt | 1 [32m+[m[m
+ 1 file changed, 1 insertion(+)[m
+[m
+[33mcommit a0ebeb7413b2658a9466de9cfb8c3b15905a18ed[m[m
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>[m
+Date:   Thu Oct 3 13:34:04 2024 +0530[m
+[m
+    Modified Readme and added a testfile[m
+[m
+ README.md | 2 [32m+[m[31m-[m[m
+ 1 file changed, 1 insertion(+), 1 deletion(-)[m
+[m
+[33mcommit 913a928b28e73a62fb2d3b1506f9aefbf4c61217[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m[m
+Author: Suvidnya Tipre <suvidnya.tipre@tigeranalytics.com>[m
+Date:   Thu Oct 3 13:02:28 2024 +0530[m
+[m
+    Initial commit[m
+[m
+:[K[K README.md | 1 [32m+[m[m
+:[K[K 1 file changed, 1 insertion(+)[m
+:[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[H[2J[H testfile.txt => remaedfile.txt | 0[m
+ 1 file changed, 0 insertions(+), 0 deletions(-)[m
+[m
+[33mcommit ee0e93f64b9f2d261d0ec4f07395ec03f55ec0b4[m[m
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>[m
+Date:   Thu Oct 3 13:34:50 2024 +0530[m
+[m
+    Adding testfile, forgot in prev commit to stage this file[m
+[m
+ testfile.txt | 1 [32m+[m[m
+ 1 file changed, 1 insertion(+)[m
+[m
+[33mcommit a0ebeb7413b2658a9466de9cfb8c3b15905a18ed[m[m
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>[m
+Date:   Thu Oct 3 13:34:04 2024 +0530[m
+[m
+    Modified Readme and added a testfile[m
+[m
+ README.md | 2 [32m+[m[31m-[m[m
+ 1 file changed, 1 insertion(+), 1 deletion(-)[m
+[m
+[33mcommit 913a928b28e73a62fb2d3b1506f9aefbf4c61217[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m[m
+Author: Suvidnya Tipre <suvidnya.tipre@tigeranalytics.com>[m
+Date:   Thu Oct 3 13:02:28 2024 +0530[m
+[m
+    Initial commit[m
+[m
+ README.md | 1 [32m+[m[m
+ 1 file changed, 1 insertion(+)[m
+[7m(END)[27m[K[H[2J[H testfile.txt => remaedfile.txt | 0[m
+ 1 file changed, 0 insertions(+), 0 deletions(-)[m
+[m
+[33mcommit ee0e93f64b9f2d261d0ec4f07395ec03f55ec0b4[m[m
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>[m
+Date:   Thu Oct 3 13:34:50 2024 +0530[m
+[m
+    Adding testfile, forgot in prev commit to stage this file[m
+[m
+ testfile.txt | 1 [32m+[m[m
+ 1 file changed, 1 insertion(+)[m
+[m
+[33mcommit a0ebeb7413b2658a9466de9cfb8c3b15905a18ed[m[m
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>[m
+Date:   Thu Oct 3 13:34:04 2024 +0530[m
+[m
+    Modified Readme and added a testfile[m
+[m
+ README.md | 2 [32m+[m[31m-[m[m
+ 1 file changed, 1 insertion(+), 1 deletion(-)[m
+[m
+[33mcommit 913a928b28e73a62fb2d3b1506f9aefbf4c61217[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m[m
+Author: Suvidnya Tipre <suvidnya.tipre@tigeranalytics.com>[m
+Date:   Thu Oct 3 13:02:28 2024 +0530[m
+[m
+    Initial commit[m
+[m
+ README.md | 1 [32m+[m[m
+ 1 file changed, 1 insertion(+)[m
+[7m(END)[27m[K[K [K^X^X[K^X^X[Kgoto mark: [K[K[7mInvalid mark letter   (press RETURN)[27m[30;1H[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[?1l>
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git log --stat[1Pp -2[K[K[K[K[K[K[Kg
+[?2004l[?1h=[33mcommit 94de15fd9ff479045cde71b2a1326c2467229bd6[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m[m
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>[m
+Date:   Thu Oct 3 13:36:59 2024 +0530[m
+[m
+    renamed fiel testfile to renamedfile[m
+[m
+[33mcommit ee0e93f64b9f2d261d0ec4f07395ec03f55ec0b4[m[m
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>[m
+Date:   Thu Oct 3 13:34:50 2024 +0530[m
+[m
+    Adding testfile, forgot in prev commit to stage this file[m
+[m
+[33mcommit a0ebeb7413b2658a9466de9cfb8c3b15905a18ed[m[m
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>[m
+Date:   Thu Oct 3 13:34:04 2024 +0530[m
+[m
+    Modified Readme and added a testfile[m
+[m
+[33mcommit 913a928b28e73a62fb2d3b1506f9aefbf4c61217[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m[m
+Author: Suvidnya Tipre <suvidnya.tipre@tigeranalytics.com>[m
+Date:   Thu Oct 3 13:02:28 2024 +0530[m
+[m
+    Initial commit[m
+[K[?1l>[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git log --prettyr[K=oneline
+[?2004l[?1h=[33m94de15fd9ff479045cde71b2a1326c2467229bd6[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m renamed fiel testfile to renamedfile[m
+[33mee0e93f64b9f2d261d0ec4f07395ec03f55ec0b4[m Adding testfile, forgot in prev commit to stage this file[m
+[33ma0ebeb7413b2658a9466de9cfb8c3b15905a18ed[m Modified Readme and added a testfile[m
+[33m913a928b28e73a62fb2d3b1506f9aefbf4c61217[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Initial commit[m
+[K[?1l>[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git log -S hello
+[?2004l[?1h=[33mcommit ee0e93f64b9f2d261d0ec4f07395ec03f55ec0b4[m[m
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>[m
+Date:   Thu Oct 3 13:34:50 2024 +0530[m
+[m
+    Adding testfile, forgot in prev commit to stage this file[m
+[K[?1l>[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git log --renamed.txt
+[?2004lfatal: unrecognized argument: --renamed.txt
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git log --renamed.txt[K[K[K[K[K[K[K[K[K[K[K[K[K-- ./git-session-clone/renamed.txt
+[?2004l[?1h=[K[?1l>[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git staty[Kus
+[?2004lOn branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# nano testfile
+[?2004l[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;55H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 7.2                                            testfile                                                      [1;119H(B[m[29d(B[0;7m^G(B[m Help[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[29;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Set Mark[30d(B[0;7m^X(B[m Exit[30;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy[2d[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[28d[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# ls
+[?2004lREADME.md  remaedfile.txt
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# nano re[K[K[K[K[K[K[Kmc [K[Kv remaedfile.txt
+[?2004lmv: missing destination file operand after 'remaedfile.txt'
+Try 'mv --help' for more information.
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# mv remaedfile.txt renamedfile.txt
+[?2004l[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# ls
+[?2004lREADME.md  renamedfile.txt
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# nano renamedfile.txt
+[?2004l[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;54H(B[0;7m[ Reading... ](B[m[28;53H(B[0;7m[ Read 1 line ](B[m[H(B[0;7m  GNU nano 7.2                                         renamedfile.txt                                                  [1;119H(B[m[29d(B[0;7m^G(B[m Help[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[29;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Set Mark[30d(B[0;7m^X(B[m Exit[30;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy[2dhello, this is a test file[?12l[?25h[?25l[?12l[?25h[2;27H[?25l[1;72H(B[0;7m*[119G(B[m[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[?12l[?25ht[?25l[?12l[?25ho[?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h[K[?25l[?12l[?25ha[?25l[?12l[?25hd[?25l[?12l[?25hd[?25l[?12l[?25he[?25l[?12l[?25hd[?25l[?12l[?25h [?25l[?12l[?25ht[?25l[?12l[?25hh[?25l[?12l[?25hi[?25l[?12l[?25hs[?25l[28d[K[?12l[?25h[4;12H[?25l[?12l[?25hl[?25l[?12l[?25hi[?25l[?12l[?25hn[?25l[?12l[?25he[?25l[?12l[?25h [?25l[?12l[?25ht[?25l[?12l[?25ho[?25l[?12l[?25he[?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25hc[?25l[?12l[?25hh[?25l[?12l[?25he[?25l[?12l[?25hh[?25l[?12l[?25hc[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25hc[?25l[?12l[?25hh[?25l[?12l[?25h [?25l[?12l[?25hw[?25l[?12l[?25ho[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25hk[?25l[?12l[?25h [?25l[?12l[?25hw[?25l[?12l[?25ho[?25l[?12l[?25hr[?25l[?12l[?25hk[?25l[?12l[?25hi[?25l[?12l[?25hn[?25l[?12l[?25hg[?25l[?12l[?25h [?25l[?12l[?25ho[?25l[?12l[?25hf[?25l[?12l[?25h [?25l[?12l[?25h-[?25l[?12l[?25h-[?25l[?12l[?25ha[?25l[?12l[?25hm[?25l[?12l[?25he[?25l[?12l[?25hn[?25l[?12l[?25hd[?25l[5d[?12l[?25h[?25l[28;54H(B[0;7m[ Writing... ](B[m[1;72H(B[0;7m [119G(B[m[28;52H(B[0;7m[ Wrote 4 lines ](B[m[?12l[?25h[5d[?25l[28d[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git status
+[?2004lOn branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mdeleted:    remaedfile.txt[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mrenamedfile.txt[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git commit -m "fa[Kalse commit"
+[?2004lOn branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mdeleted:    remaedfile.txt[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mrenamedfile.txt[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git log
+[?2004l[?1h=[33mcommit 94de15fd9ff479045cde71b2a1326c2467229bd6[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m[m
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>[m
+Date:   Thu Oct 3 13:36:59 2024 +0530[m
+[m
+    renamed fiel testfile to renamedfile[m
+[m
+[33mcommit ee0e93f64b9f2d261d0ec4f07395ec03f55ec0b4[m[m
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>[m
+Date:   Thu Oct 3 13:34:50 2024 +0530[m
+[m
+    Adding testfile, forgot in prev commit to stage this file[m
+[m
+[33mcommit a0ebeb7413b2658a9466de9cfb8c3b15905a18ed[m[m
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>[m
+Date:   Thu Oct 3 13:34:04 2024 +0530[m
+[m
+    Modified Readme and added a testfile[m
+[m
+[33mcommit 913a928b28e73a62fb2d3b1506f9aefbf4c61217[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m[m
+Author: Suvidnya Tipre <suvidnya.tipre@tigeranalytics.com>[m
+Date:   Thu Oct 3 13:02:28 2024 +0530[m
+[m
+    Initial commit[m
+[K[?1l>[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git add .
+[?2004l[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git status
+[?2004lOn branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mdeleted:    remaedfile.txt[m
+	[32mnew file:   renamedfile.txt[m
+
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# ls
+[?2004lREADME.md  renamedfile.txt
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# nano r[KREADME.md 
+[?2004l[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;54H(B[0;7m[ Reading... ](B[m[28;53H(B[0;7m[ Read 1 line ](B[m[H(B[0;7m  GNU nano 7.2                                            README.md                                                     [1;119H(B[m[29d(B[0;7m^G(B[m Help[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[29;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Set Mark[30d(B[0;7m^X(B[m Exit[30;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy[2d(B[0;1m[33m# git-sessionThis repository is for test purposes[39m(B[m[?12l[?25h[?25l[1;69H(B[0;7m*[119G(B[m[?12l[?25h[2d # git-sessionThis repository is for test purposes [?25l[?12l[?25h(B[0;1m[33m# git-sessionThis repository is for test purposes[39m(B[m[K[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[K[3dThis repository is for test purposes[?12l[?25h[?25l[?12l[?25h[3;37H[?25l[?12l[?25h[4d[?25l[5d[?12l[?25h[?25l[28d[K[?12l[?25h[5dC[?25l[?12l[?25hh[?25l[?12l[?25he[?25l[?12l[?25hk[?25l[?12l[?25hc[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25hc[?25l[?12l[?25hk[?25l[?12l[?25hi[?25l[?12l[?25hn[?25l[?12l[?25hg[?25l[?12l[?25h [?25l[?12l[?25hf[?25l[?12l[?25ho[?25l[?12l[?25hr[?25l[?12l[?25h [?25l[?12l[?25ha[?25l[?12l[?25hm[?25l[?12l[?25he[?25l[?12l[?25hn[?25l[?12l[?25hd[?25l[?12l[?25h [?25l[?12l[?25hu[?25l[?12l[?25hs[?25l[?12l[?25he[?25l[28;54H(B[0;7m[ Writing... ](B[m[1;69H(B[0;7m [119G(B[m[28;52H(B[0;7m[ Wrote 4 lines ](B[m[?12l[?25h[5;23H[?25l[28d[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git commit -m "false commit"
+[?2004l[main df3b219] false commit
+ 2 files changed, 4 insertions(+), 1 deletion(-)
+ delete mode 100644 remaedfile.txt
+ create mode 100644 renamedfile.txt
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git sttsa[K[K[Katus
+[?2004lOn branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   README.md[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git add renamedfile.txt [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K re[K[KREADME.md 
+[?2004l[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# GIT [K[K[K[Kgit status
+[?2004lOn branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mmodified:   README.md[m
+
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# i[Kgit commit -m[K[K[K aa[K[K--amend
+[?2004lhint: Waiting for your editor to close the file... [?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;54H(B[0;7m[ Reading... ](B[m[28;52H(B[0;7m[ Read 16 lines ](B[m[H(B[0;7m  GNU nano 7.2                           /root/git-session-clone/.git/COMMIT_EDITMSG                                    [1;119H(B[m[29d(B[0;7m^G(B[m Help[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[29;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Set Mark[30d(B[0;7m^X(B[m Exit[30;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy[2dfalse commit[4d[36m# Please enter the commit message for your changes. Lines starting[5d# with '#' will be ignored, and an empty message aborts the commit.[6d#[7d# Date:      Thu Oct 3 13:58:37 2024 +0530[8d#[9d# On branch main[10d# Your branch is ahead of 'origin/main' by 4 commits.[11d#   (use "git push" to publish your local commits)[12d#[13d# Changes to be committed:[14d#[38;5;208m       [36mmodified:   README.md[15d#[38;5;208m       [36mdeleted:    remaedfile.txt[16d#[38;5;208m       [36mnew file:   renamedfile.txt[17d#[2d[39m(B[m[?12l[?25h[?25l[1;86H(B[0;7m*[119G(B[m[?12l[?25h[2dlfalse commitl[?25l[?12l[?25h[1P[?25l[?12l[?25h[2;13H[?25l[?12l[?25h [?25l[?12l[?25hc[?25l[?12l[?25hh[?25l[?12l[?25hn[?25l[?12l[?25ha[?25l[?12l[?25hg[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25ha[?25l[?12l[?25hn[?25l[?12l[?25hg[?25l[?12l[?25he[?25l[?12l[?25hd[?25l[?12l[?25h [?25l[?12l[?25ht[?25l[28d[K[?12l[?25h[2;23Ho[?25l[?12l[?25h [?25l[?12l[?25ht[?25l[?12l[?25hr[?25l[?12l[?25hu[?25l[?12l[?25he[?25l[?12l[?25h [?25l[?12l[?25hc[?25l[?12l[?25ho[?25l[?12l[?25hm[?25l[?12l[?25hm[?25l[?12l[?25hi[?25l[?12l[?25ht[?25l7[3;28r8[3dM[1;30r[3;1H[?12l[?25h[?25l[3;28r[28;1H
+[1;30r[2;36H[?12l[?25h[?25l[28;54H(B[0;7m[ Writing... ](B[m[1;86H(B[0;7m [119G(B[m[28;52H(B[0;7m[ Wrote 16 lines ](B[m[?12l[?25h[2;36H[?25l[28d[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l[K[main fa0e877] false commit changed to true commit
+ Date: Thu Oct 3 13:58:37 2024 +0530
+ 3 files changed, 8 insertions(+), 2 deletions(-)
+ delete mode 100644 remaedfile.txt
+ create mode 100644 renamedfile.txt
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git log
+[?2004l[?1h=[33mcommit fa0e877f8893aab2555c2655148619a02de9afb7[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m[m
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>[m
+Date:   Thu Oct 3 13:58:37 2024 +0530[m
+[m
+    false commit changed to true commit[m
+[m
+[33mcommit 94de15fd9ff479045cde71b2a1326c2467229bd6[m[m
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>[m
+Date:   Thu Oct 3 13:36:59 2024 +0530[m
+[m
+    renamed fiel testfile to renamedfile[m
+[m
+[33mcommit ee0e93f64b9f2d261d0ec4f07395ec03f55ec0b4[m[m
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>[m
+Date:   Thu Oct 3 13:34:50 2024 +0530[m
+[m
+    Adding testfile, forgot in prev commit to stage this file[m
+[m
+[33mcommit a0ebeb7413b2658a9466de9cfb8c3b15905a18ed[m[m
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>[m
+Date:   Thu Oct 3 13:34:04 2024 +0530[m
+[m
+    Modified Readme and added a testfile[m
+[m
+[33mcommit 913a928b28e73a62fb2d3b1506f9aefbf4c61217[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m[m
+Author: Suvidnya Tipre <suvidnya.tipre@tigeranalytics.com>[m
+Date:   Thu Oct 3 13:02:28 2024 +0530[m
+[m
+    Initial commit[m
+:[K[K[?1l>[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git status
+[?2004lOn branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# ls
+[?2004lREADME.md  renamedfile.txt
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# nao [K[Kno renamedfile.txt 
+[?2004l[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;54H(B[0;7m[ Reading... ](B[m[28;53H(B[0;7m[ Read 4 lines ](B[m[H(B[0;7m  GNU nano 7.2                                         renamedfile.txt                                                  [1;119H(B[m[29d(B[0;7m^G(B[m Help[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[29;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Set Mark[30d(B[0;7m^X(B[m Exit[30;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy[2dhello, this is a test file[4dadded this line to check working of --amend[2d[?12l[?25h[?25l[?12l[?25h[3d[?25l[?12l[?25h[4d[?25l[?12l[?25h[4;44H[?25l[1;72H(B[0;7m*[119G(B[m[5d[?12l[?25h[?25l[?12l[?25ha[?25l[?12l[?25hd[?25l[?12l[?25hd[?25l[?12l[?25hi[?25l[?12l[?25hn[?25l[?12l[?25hg[?25l[?12l[?25h [?25l[?12l[?25ht[?25l[?12l[?25hh[?25l[?12l[?25hi[?25l[?12l[?25hs[?25l[?12l[?25h [?25l[?12l[?25hl[?25l[?12l[?25hi[?25l[?12l[?25hn[?25l[28d[K[?12l[?25h[5;16He[?25l[?12l[?25h [?25l[?12l[?25ht[?25l[?12l[?25ho[?25l[?12l[?25h [?25l[?12l[?25hu[?25l[?12l[?25hn[?25l[?12l[?25hs[?25l[?12l[?25ht[?25l[?12l[?25ha[?25l[?12l[?25hg[?25l[?12l[?25he[?25l[?12l[?25h [?25l[?12l[?25hf[?25l[?12l[?25hi[?25l[?12l[?25hl[?25l[?12l[?25he[?25l[28;54H(B[0;7m[ Writing... ](B[m[1;72H(B[0;7m [119G(B[m[28;52H(B[0;7m[ Wrote 5 lines ](B[m[?12l[?25h[5;33H[?25l[28d[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git add .
+[?2004l[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git sts[Katus
+[?2004lOn branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mmodified:   renamedfile.txt[m
+
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git reset HEAD RE[K[Krenamedfile.txt 
+[?2004lUnstaged changes after reset:
+M	renamedfile.txt
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git stats[Kus
+[?2004lOn branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   renamedfile.txt[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git checkout --renameed[K[Kd.t[K[K[Kdfile.txt renamedfile.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git statt[Kus
+[?2004lOn branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# nanno [K[K[Ko renamedfile.txt 
+[?2004l[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;54H(B[0;7m[ Reading... ](B[m[28;53H(B[0;7m[ Read 4 lines ](B[m[H(B[0;7m  GNU nano 7.2                                         renamedfile.txt                                                  [1;119H(B[m[29d(B[0;7m^G(B[m Help[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[29;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Set Mark[30d(B[0;7m^X(B[m Exit[30;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy[2dhello, this is a test file[4dadded this line to check working of --amend[2d[?12l[?25h[?25l[?12l[?25h[3d[?25l[?12l[?25h[?25l[?12l[?25h[4d[?25l[?12l[?25h[4;44H[?25l[1;72H(B[0;7m*[119G(B[m[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[?12l[?25ha[?25l[?12l[?25hd[?25l[?12l[?25hd[?25l[?12l[?25hi[?25l[?12l[?25hn[?25l[?12l[?25hg[?25l[?12l[?25h [?25l[?12l[?25ht[?25l[?12l[?25hh[?25l[?12l[?25hs[?25l[?12l[?25hi[?25l[?12l[?25h [?25l[?12l[?25h[?25l[28d[K[?12l[?25h[6;11H [?25l[?12l[?25h [?25l[?12l[?25hi[?25l[?12l[?25hs[?25l[?12l[?25h [?25l[?12l[?25hl[?25l[?12l[?25hi[?25l[?12l[?25hn[?25l[?12l[?25he[?25l[?12l[?25h [?25l[?12l[?25ht[?25l[?12l[?25ho[?25l[?12l[?25h [?25l[?12l[?25hl[?25l[?12l[?25he[?25l[?12l[?25ha[?25l[?12l[?25hr[?25l[?12l[?25hn[?25l[?12l[?25h [?25l[?12l[?25ha[?25l[?12l[?25hb[?25l[?12l[?25ho[?25l[?12l[?25ht[?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25ho[?25l[?12l[?25ht[?25l[?12l[?25h [?25l[?12l[?25hu[?25l[?12l[?25ht[?25l[?12l[?25h [?25l[?12l[?25hg[?25l[?12l[?25hi[?25l[?12l[?25ht[?25l[?12l[?25h [?25l[?12l[?25hr[?25l[?12l[?25he[?25l[?12l[?25hs[?25l[?12l[?25ht[?25l[?12l[?25ho[?25l[?12l[?25hr[?25l[?12l[?25he[?25l[28;54H(B[0;7m[ Writing... ](B[m[1;72H(B[0;7m [119G(B[m[28;52H(B[0;7m[ Wrote 6 lines ](B[m[?12l[?25h[6;44H[?25l[28d[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git status
+[?2004lOn branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   renamedfile.txt[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git addd[K rean[K[Knamedfile.txt 
+[?2004l[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git [K[Kt status
+[?2004lOn branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mmodified:   renamedfile.txt[m
+
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git restore --staged renamedfile.txt 
+[?2004l[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git status
+[?2004lOn branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   renamedfile.txt[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git rstor e[K[K[K[K[K[Kestore renamedfile.txt 
+[?2004l[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git status
+[?2004lOn branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# cd ..
+[?2004l[?2004h]0;root@Suvidnya: ~root@Suvidnya:~# git remote
+[?2004lfatal: not a git repository (or any of the parent directories): .git
+[?2004h]0;root@Suvidnya: ~root@Suvidnya:~# cd git-session-clone/
+[?2004l[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git remote
+[?2004lorigin
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git fetch
+[?2004l[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git fetch rogii[K[K[K[K[Korign[Kin
+[?2004l[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git gt i[K[Kclear[K[K[K[K[K[K[K[K remote show origin
+[?2004l* remote origin
+  Fetch URL: https://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@github.com/suvidnya-tigerA/git-session
+  Push  URL: https://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@github.com/suvidnya-tigerA/git-session
+  HEAD branch: main
+  Remote branch:
+    main tracked
+  Local branch configured for 'git pull':
+    main merges with remote main
+  Local ref configured for 'git push':
+    main pushes to main (fast-forwardable)
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git push remte[K[Kote origin
+[?2004lfatal: 'remote' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git push
+[?2004lEnumerating objects: 14, done.
+Counting objects:   7% (1/14)Counting objects:  14% (2/14)Counting objects:  21% (3/14)Counting objects:  28% (4/14)Counting objects:  35% (5/14)Counting objects:  42% (6/14)Counting objects:  50% (7/14)Counting objects:  57% (8/14)Counting objects:  64% (9/14)Counting objects:  71% (10/14)Counting objects:  78% (11/14)Counting objects:  85% (12/14)Counting objects:  92% (13/14)Counting objects: 100% (14/14)Counting objects: 100% (14/14), done.
+Delta compression using up to 8 threads
+Compressing objects:  10% (1/10)Compressing objects:  20% (2/10)Compressing objects:  30% (3/10)Compressing objects:  40% (4/10)Compressing objects:  50% (5/10)Compressing objects:  60% (6/10)Compressing objects:  70% (7/10)Compressing objects:  80% (8/10)Compressing objects:  90% (9/10)Compressing objects: 100% (10/10)Compressing objects: 100% (10/10), done.
+Writing objects:   8% (1/12)Writing objects:  16% (2/12)Writing objects:  25% (3/12)Writing objects:  33% (4/12)Writing objects:  41% (5/12)Writing objects:  50% (6/12)Writing objects:  58% (7/12)Writing objects:  66% (8/12)Writing objects:  75% (9/12)Writing objects:  83% (10/12)Writing objects:  91% (11/12)Writing objects: 100% (12/12)Writing objects: 100% (12/12), 1.28 KiB | 656.00 KiB/s, done.
+Total 12 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/suvidnya-tigerA/git-session
+   913a928..fa0e877  main -> main
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git status
+[?2004lOn branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git tag
+[?2004l[?1h=[K[?1l>[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git tag -a v1.1[K0 -m "first tag"
+[?2004l[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git tag
+[?2004l[?1h=v1.0[m
+[K[?1l>[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git show v1.0
+[?2004l[?1h=[33mtag v1.0[m[m
+Tagger: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>[m
+Date:   Thu Oct 3 14:16:29 2024 +0530[m
+[m
+first tag[m
+[m
+[33mcommit fa0e877f8893aab2555c2655148619a02de9afb7[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;33mtag: [m[1;33mv1.0[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m[m
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>[m
+Date:   Thu Oct 3 13:58:37 2024 +0530[m
+[m
+    false commit changed to true commit[m
+[m
+[1mdiff --git a/README.md b/README.md[m[m
+[1mindex 89461d8..078e14b 100644[m[m
+[1m--- a/README.md[m[m
+[1m+++ b/README.md[m[m
+[36m@@ -1 +1,4 @@[m[m
+[31m-# git-sessionThis repository is for test purposes[m[m
+[32m+[m[32m# git-session[m[m
+[32m+[m[32mThis repository is for test purposes[m[m
+[32m+[m[m
+[32m+[m[32mChecking for amend use[m[m
+[1mdiff --git a/remaedfile.txt b/remaedfile.txt[m[m
+[1mdeleted file mode 100644[m[m
+[1mindex 82e1d31..0000000[m[m
+[1m--- a/remaedfile.txt[m[m
+[1m+++ /dev/null[m[m
+[36m@@ -1 +0,0 @@[m[m
+[31m-hello, this is a test file[m[m
+:[K[K[?1l>[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git log --pertty[Ky=oneline
+[?2004lfatal: unrecognized argument: --pertty=oneline
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git log --pertty=oneline[1Ptty=oneline[1Ptty=onelinertty=onelineetty=oneline[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[?1h=[33mfa0e877f8893aab2555c2655148619a02de9afb7[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;33mtag: [m[1;33mv1.0[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m false commit changed to tru[m [33m[m[33m[m[1;36m[m[33m[m[1;32m[m[33m[m[1;33m[m[1;33m[m[33m[m[1;31m[m[33m[m[1;31m[m[33m[me commit[m
+[33m94de15fd9ff479045cde71b2a1326c2467229bd6[m renamed fiel testfile to renamedfile[m
+[33mee0e93f64b9f2d261d0ec4f07395ec03f55ec0b4[m Adding testfile, forgot in prev commit to stage this file[m
+[33ma0ebeb7413b2658a9466de9cfb8c3b15905a18ed[m Modified Readme and added a testfile[m
+[33m913a928b28e73a62fb2d3b1506f9aefbf4c61217[m Initial commit[m
+[K[?1l>[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git tag -a v0.0 913a992[K[K2
+[?2004lhint: Waiting for your editor to close the file... [?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;54H(B[0;7m[ Reading... ](B[m[28;53H(B[0;7m[ Read 5 lines ](B[m[H(B[0;7m  GNU nano 7.2                            /root/git-session-clone/.git/TAG_EDITMSG                                      [1;119H(B[m[29d(B[0;7m^G(B[m Help[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[29;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Set Mark[30d(B[0;7m^X(B[m Exit[30;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy[3d[36m#[4d# Write a message for tag:[5d#   v0.0[6d# Lines starting with '#' will be ignored.[2d[39m(B[m[?12l[?25h[?25l[1;84H(B[0;7m*[119G(B[m[?12l[?25h[2dv[?25l[?12l[?25h0[?25l[?12l[?25h.[?25l[?12l[?25h0[?25l[?12l[?25h [?25l[?12l[?25ht[?25l[?12l[?25ha[?25l[?12l[?25hg[?25l[?12l[?25h [?25l[?12l[?25h([?25l[?12l[?25hs[?25l[?12l[?25ha[?25l[?12l[?25ht[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25ht[?25l[?12l[?25ha[?25l[?12l[?25hr[?25l[?12l[?25ht[?25l[28d[K[?12l[?25h[2;16H)[?25l[28;54H(B[0;7m[ Writing... ](B[m[1;84H(B[0;7m [119G(B[m[28;52H(B[0;7m[ Wrote 5 lines ](B[m[?12l[?25h[2;17H[?25l[28d[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l[K[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git tag
+[?2004l[?1h=v0.0[m
+v1.0[m
+[K[?1l>[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git tag v0,,[K[K.0
+[?2004lfatal: tag 'v0.0' already exists
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git show v0.0
+[?2004l[?1h=[33mtag v0.0[m[m
+Tagger: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>[m
+Date:   Thu Oct 3 14:21:57 2024 +0530[m
+[m
+v0.0 tag (start)[m
+[m
+[33mcommit 913a928b28e73a62fb2d3b1506f9aefbf4c61217[m[33m ([m[1;33mtag: [m[1;33mv0.0[m[33m)[m[m
+Author: Suvidnya Tipre <suvidnya.tipre@tigeranalytics.com>[m
+Date:   Thu Oct 3 13:02:28 2024 +0530[m
+[m
+    Initial commit[m
+[m
+[1mdiff --git a/README.md b/README.md[m[m
+[1mnew file mode 100644[m[m
+[1mindex 0000000..7407007[m[m
+[1m--- /dev/null[m[m
+[1m+++ b/README.md[m[m
+[36m@@ -0,0 +1 @@[m[m
+[32m+[m[32m# git-session[m[m
+\ No newline at end of file[m[m
+[K[?1l>[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# gi [Kt push orign [K[Kin v0.0
+[?2004lEnumerating objects: 1, done.
+Counting objects: 100% (1/1)Counting objects: 100% (1/1), done.
+Writing objects: 100% (1/1)Writing objects: 100% (1/1), 175 bytes | 175.00 KiB/s, done.
+Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/suvidnya-tigerA/git-session
+ * [new tag]         v0.0 -> v0.0
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git status
+[?2004lOn branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git statuspush origin v0.0[K[K[K1.0
+[?2004lEnumerating objects: 1, done.
+Counting objects: 100% (1/1)Counting objects: 100% (1/1), done.
+Writing objects: 100% (1/1)Writing objects: 100% (1/1), 169 bytes | 169.00 KiB/s, done.
+Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/suvidnya-tigerA/git-session
+ * [new tag]         v1.0 -> v1.0
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git checkout v0.0
+[?2004lNote: switching to 'v0.0'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 913a928 Initial commit
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# ls
+[?2004lREADME.md
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git checkout v1.0
+[?2004lPrevious HEAD position was 913a928 Initial commit
+HEAD is now at fa0e877 false commit changed to true commit
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# ls
+[?2004lREADME.md  renamedfile.txt
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# cler[Kar
+[?2004l[H[2J[3J[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# ^C[?2004l[?2004h[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kasfsaf[K[K[K[K[K[Kgit branch testing
+[?2004l
+it: command not found
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git bit branch testing[1@g[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git log
+[?2004l[?1h=[33mcommit fa0e877f8893aab2555c2655148619a02de9afb7[m[33m ([m[1;36mHEAD[m[33m, [m[1;33mtag: [m[1;33mv1.0[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mtesting[m[33m, [m[1;32mmain[m[33m)[m[m
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>[m
+Date:   Thu Oct 3 13:58:37 2024 +0530[m
+[m
+    false commit changed to true commit[m
+[m
+[33mcommit 94de15fd9ff479045cde71b2a1326c2467229bd6[m[m
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>[m
+Date:   Thu Oct 3 13:36:59 2024 +0530[m
+[m
+    renamed fiel testfile to renamedfile[m
+[m
+[33mcommit ee0e93f64b9f2d261d0ec4f07395ec03f55ec0b4[m[m
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>[m
+Date:   Thu Oct 3 13:34:50 2024 +0530[m
+[m
+    Adding testfile, forgot in prev commit to stage this file[m
+[m
+[33mcommit a0ebeb7413b2658a9466de9cfb8c3b15905a18ed[m[m
+Author: suvidnya-tigerA <suvidnya.tipre@tigeranalytics.com>[m
+Date:   Thu Oct 3 13:34:04 2024 +0530[m
+[m
+    Modified Readme and added a testfile[m
+[m
+[33mcommit 913a928b28e73a62fb2d3b1506f9aefbf4c61217[m[33m ([m[1;33mtag: [m[1;33mv0.0[m[33m)[m[m
+Author: Suvidnya Tipre <suvidnya.tipre@tigeranalytics.com>[m
+Date:   Thu Oct 3 13:02:28 2024 +0530[m
+[m
+    Initial commit[m
+[K[?1l>[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# [K]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git checou[K[Kkout testing
+[?2004lSwitched to branch 'testing'
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# ls
+[?2004lREADME.md  renamedfile.txt
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# v[Knano renamedfile.txt 
+[?2004l[?2004h[?1049h[22;0;0t[1;32r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[30;26H(B[0;7m[ Reading... ](B[m[30;25H(B[0;7m[ Read 4 lines ](B[m[H(B[0;7m  GNU nano 7.2             renamedfile.txt                      [1;63H(B[m[31d(B[0;7m^G(B[m Help     (B[0;7m^O(B[m Write Out(B[0;7m^W(B[m Where Is (B[0;7m^K(B[m Cut[49G(B[0;7m^T(B[m Execute[32d(B[0;7m^X(B[m Exit     (B[0;7m^R(B[m Read File(B[0;7m^\(B[m Replace  (B[0;7m^U(B[m Paste    (B[0;7m^J(B[m Justify[2dhello, this is a test file[4dadded this line to check working of --amend[2d[?12l[?25h[?25l[?12l[?25h[3d[?25l[?12l[?25h[4d[?25l[?12l[?25h[A[?25l[1;44H(B[0;7m*[63G(B[m[3;29r[29;1H
+[1;32r[2;27H[?12l[?25h[?25l[?12l[?25h[3d[?25l[?12l[?25h[3;44H[?25l[4d[?12l[?25h[?25l[?12l[?25hc[?25l[?12l[?25hh[?25l[?12l[?25ha[?25l[?12l[?25hn[?25l[?12l[?25hg[?25l[?12l[?25hi[?25l[?12l[?25hn[?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25hg[?25l[?12l[?25h [?25l[?12l[?25ht[?25l[30d[K[?12l[?25h[4;11Hh[?25l[?12l[?25hi[?25l[?12l[?25hs[?25l[?12l[?25h [?25l[?12l[?25hl[?25l[?12l[?25hi[?25l[?12l[?25hn[?25l[?12l[?25he[?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[K[?25l[?12l[?25ha[?25l[?12l[?25hd[?25l[?12l[?25hd[?25l[?12l[?25hi[?25l[?12l[?25hn[?25l[?12l[?25hg[?25l[?12l[?25h [?25l[?12l[?25ht[?25l[?12l[?25hh[?25l[?12l[?25hi[?25l[?12l[?25hs[?25l[?12l[?25h [?25l[?12l[?25hl[?25l[?12l[?25hi[?25l[?12l[?25hn[?25l[?12l[?25he[?25l[?12l[?25h [?25l[?12l[?25ht[?25l[?12l[?25ho[?25l[?12l[?25h [?25l[?12l[?25ht[?25l[?12l[?25he[?25l[?12l[?25hs[?25l[?12l[?25ht[?25l[?12l[?25h [?25l[?12l[?25hb[?25l[?12l[?25hr[?25l[?12l[?25ha[?25l[?12l[?25hn[?25l[?12l[?25hc[?25l[?12l[?25hh[?25l[?12l[?25hi[?25l[?12l[?25hn[?25l[?12l[?25hg[?25l[30;26H(B[0;7m[ Writing... ](B[m[1;44H(B[0;7m [63G(B[m[30;24H(B[0;7m[ Wrote 4 lines ](B[m[?12l[?25h[4;35H[?25l[30d[J[32d[?12l[?25h[32;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git commit -a -m "make a chan ge for new branch"[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C a change[1P[A]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ci a chang[1@e[A]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cn a chan[1@g[A]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cg a cha[1@n[A]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[testing 3b73966] making a change for new branch
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git status
+[?2004lOn branch testing
+nothing to commit, working tree clean
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git checkout main
+[?2004lSwitched to branch 'main'
+Your branch is up to date with 'origin/main'.
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# ls
+[?2004lREADME.md  renamedfile.txt
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# nano reanm;ed[K[K[K[Ke[Ka[K[K[K[Kenamedfile.txt 
+[?2004l[?2004h[?1049h[22;0;0t[1;32r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[30;26H(B[0;7m[ Reading... ](B[m[30;25H(B[0;7m[ Read 4 lines ](B[m[H(B[0;7m  GNU nano 7.2             renamedfile.txt                      [1;63H(B[m[31d(B[0;7m^G(B[m Help     (B[0;7m^O(B[m Write Out(B[0;7m^W(B[m Where Is (B[0;7m^K(B[m Cut[49G(B[0;7m^T(B[m Execute[32d(B[0;7m^X(B[m Exit     (B[0;7m^R(B[m Read File(B[0;7m^\(B[m Replace  (B[0;7m^U(B[m Paste    (B[0;7m^J(B[m Justify[2dhello, this is a test file[4dadded this line to check working of --amend[2d[?12l[?25h[?25l[30d[J[32d[?12l[?25h[32;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# nano renamedfile.txt 
+[?2004l[?2004h[?1049h[22;0;0t[1;32r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[30;26H(B[0;7m[ Reading... ](B[m[30;25H(B[0;7m[ Read 4 lines ](B[m[H(B[0;7m  GNU nano 7.2             renamedfile.txt                      [1;63H(B[m[31d(B[0;7m^G(B[m Help     (B[0;7m^O(B[m Write Out(B[0;7m^W(B[m Where Is (B[0;7m^K(B[m Cut[49G(B[0;7m^T(B[m Execute[32d(B[0;7m^X(B[m Exit     (B[0;7m^R(B[m Read File(B[0;7m^\(B[m Replace  (B[0;7m^U(B[m Paste    (B[0;7m^J(B[m Justify[2dhello, this is a test file[4dadded this line to check working of --amend[2d[?12l[?25h[?25l[?12l[?25h[2;27H[?25l[1;44H(B[0;7m*[63G(B[m[3;29r[29;1H
+[1;32r[2;27H[?12l[?25h[?25l[?12l[?25h[3d[?25l[?12l[?25h[3;44H[?25l[4d[?12l[?25h[?25l[?12l[?25ht[?25l[?12l[?25hh[?25l[?12l[?25hi[?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25hs[?25l[?12l[?25h [?25l[?12l[?25hl[?25l[?12l[?25hi[?25l[?12l[?25hn[?25l[?12l[?25he[?25l[?12l[?25h [?25l[?12l[?25ht[?25l[?12l[?25ho[?25l[30d[K[?12l[?25h[4;14H[?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25hi[?25l[?12l[?25hs[?25l[?12l[?25h [?25l[?12l[?25ht[?25l[?12l[?25ho[?25l[?12l[?25h [?25l[?12l[?25ht[?25l[?12l[?25he[?25l[?12l[?25hs[?25l[?12l[?25ht[?25l[?12l[?25h [?25l[?12l[?25hm[?25l[?12l[?25he[?25l[?12l[?25hr[?25l[?12l[?25hg[?25l[?12l[?25he[?25l[?12l[?25hr[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25hb[?25l[?12l[?25hr[?25l[?12l[?25ha[?25l[?12l[?25hn[?25l[?12l[?25hc[?25l[?12l[?25hh[?25l[?12l[?25h [?25l[?12l[?25hm[?25l[?12l[?25he[?25l[?12l[?25hr[?25l[?12l[?25hg[?25l[?12l[?25hi[?25l[?12l[?25hn[?25l[?12l[?25hg[?25l[30;26H(B[0;7m[ Writing... ](B[m[1;44H(B[0;7m [63G(B[m[30;24H(B[0;7m[ Wrote 4 lines ](B[m[?12l[?25h[4;36H[?25l[30d[J[32d[?12l[?25h[32;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git status
+[?2004lOn branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   renamedfile.txt[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git commit -a -m"tes[K[K "t[C[Cesting bar [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kra nch mergind[Kg"
+[?2004l[main fd35bca] testing branch merging
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git status
+[?2004lOn branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git merge testing
+[?2004lAuto-merging renamedfile.txt
+CONFLICT (content): Merge conflict in renamedfile.txt
+Automatic merge failed; fix conflicts and then commit the result.
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git checkout main
+[?2004lrenamedfile.txt: needs merge
+error: you need to resolve your current index first
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git merge main
+[?2004lerror: Merging is not possible because you have unmerged files.
+[33mhint: Fix them up in the work tree, and then use 'git add/rm <file>'[m
+[33mhint: as appropriate to mark resolution and make a commit.[m
+fatal: Exiting because of an unresolved conflict.
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git status
+[?2004lOn branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+	[31mboth modified:   renamedfile.txt[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git add .
+[?2004l[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git status
+[?2004lOn branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+	[32mmodified:   renamedfile.txt[m
+
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git commit =[K-a -[K[K[Km "comiting [K[K[K[K[K[Kmit for mer ge"
+[?2004l[main ace962a] commit for merge
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git checkout main
+[?2004lAlready on 'main'
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git merge testing
+[?2004lAlready up to date.
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# nano [K[K[K[K[Kgit status
+[?2004lOn branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# nao [K[Kno renamedfile.txt 
+[?2004l[?2004h[?1049h[22;0;0t[1;32r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[30;26H(B[0;7m[ Reading... ](B[m[30;25H(B[0;7m[ Read 8 lines ](B[m[H(B[0;7m  GNU nano 7.2             renamedfile.txt                      [1;63H(B[m[31d(B[0;7m^G(B[m Help     (B[0;7m^O(B[m Write Out(B[0;7m^W(B[m Where Is (B[0;7m^K(B[m Cut[49G(B[0;7m^T(B[m Execute[32d(B[0;7m^X(B[m Exit     (B[0;7m^R(B[m Read File(B[0;7m^\(B[m Replace  (B[0;7m^U(B[m Paste    (B[0;7m^J(B[m Justify[2dhello, this is a test file[3dadded this line to check working of --amend[4d<<<<<<< HEAD[5dthis line is to test branch merging[6d=======[7dadding this line to test branching[8d>>>>>>> testing[2d[?12l[?25h[?25l[30;25H (B[0;7m[ Writing... ](B[m[K[1;63H[30;24H(B[0;7m[ Wrote 8 lines ](B[m[?12l[?25h[2d[?25l[30d[J[32d[?12l[?25h[32;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git branh[Kch temp
+[?2004l[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git ch[Kheckout temp
+[?2004lSwitched to branch 'temp'
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# nano renamedfile.txt 
+[?2004l[?2004h[?1049h[22;0;0t[1;32r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[30;26H(B[0;7m[ Reading... ](B[m[30;25H(B[0;7m[ Read 8 lines ](B[m[H(B[0;7m  GNU nano 7.2             renamedfile.txt                      [1;63H(B[m[31d(B[0;7m^G(B[m Help     (B[0;7m^O(B[m Write Out(B[0;7m^W(B[m Where Is (B[0;7m^K(B[m Cut[49G(B[0;7m^T(B[m Execute[32d(B[0;7m^X(B[m Exit     (B[0;7m^R(B[m Read File(B[0;7m^\(B[m Replace  (B[0;7m^U(B[m Paste    (B[0;7m^J(B[m Justify[2dhello, this is a test file[3dadded this line to check working of --amend[4d<<<<<<< HEAD[5dthis line is to test branch merging[6d=======[7dadding this line to test branching[8d>>>>>>> testing[2d[?12l[?25h[?25l[?12l[?25h[3d[?25l[?12l[?25h[4d[?25l[?12l[?25h[5d[?25l[?12l[?25h[6d[?25l[?12l[?25h[7d[?25l[?12l[?25h[8d[?25l[?12l[?25h[8;16H[?25l[1;44H(B[0;7m*[63G(B[m[9d[?12l[?25h[?25l[?12l[?25ht[?25l[?12l[?25hh[?25l[?12l[?25hi[?25l[?12l[?25hs[?25l[?12l[?25h [?25l[?12l[?25hl[?25l[?12l[?25hi[?25l[?12l[?25hn[?25l[?12l[?25he[?25l[?12l[?25h [?25l[?12l[?25ht[?25l[30d[K[?12l[?25h[9;12Ho[?25l[?12l[?25h [?25l[?12l[?25hd[?25l[?12l[?25he[?25l[?12l[?25hl[?25l[?12l[?25ht[?25l[?12l[?25he[?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25he[?25l[?12l[?25ht[?25l[?12l[?25he[?25l[?12l[?25h [?25l[?12l[?25hb[?25l[?12l[?25hr[?25l[?12l[?25ha[?25l[?12l[?25hn[?25l[?12l[?25hc[?25l[?12l[?25hh[?25l[?12l[?25h [?25l[?12l[?25ha[?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25hn[?25l[?12l[?25hd[?25l[?12l[?25h [?25l[?12l[?25hs[?25l[?12l[?25he[?25l[?12l[?25he[?25l[?12l[?25h [?25l[?12l[?25hc[?25l[?12l[?25hh[?25l[?12l[?25ha[?25l[?12l[?25hn[?25l[?12l[?25hg[?25l[?12l[?25he[?25l[?12l[?25hs[?25l[30;26H(B[0;7m[ Writing... ](B[m[1;44H(B[0;7m [63G(B[m[30;24H(B[0;7m[ Wrote 9 lines ](B[m[?12l[?25h[9;43H[?25l[30d[J[32d[?12l[?25h[32;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# cat renamedfile.txt 
+[?2004lhello, this is a test file
+added this line to check working of --amend
+<<<<<<< HEAD
+this line is to test branch merging
+=======
+adding this line to test branching
+>>>>>>> testing
+this line to delete branch and see changes
+
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git barnch[K[K[K[K[Kranch d-[K[K-d temp
+[?2004lerror: cannot delete branch 'temp' used by worktree at '/root/git-session-clone'
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git checkout testing
+[?2004lerror: Your local changes to the following files would be overwritten by checkout:
+	renamedfile.txt
+Please commit your changes or stash them before you switch branches.
+Aborting
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git commit -a -m "commit for  deleting this barnch[K[K[K[K[Kranch"
+[?2004l[temp 5923c6f] commit for deleting this branch
+ 1 file changed, 1 insertion(+)
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git status
+[?2004lOn branch temp
+nothing to commit, working tree clean
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git ceh[K[Kheckout main
+[?2004lSwitched to branch 'main'
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git branch -d temp
+[?2004lerror: the branch 'temp' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D temp'
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git merge temp
+[?2004lUpdating ace962a..5923c6f
+Fast-forward
+ renamedfile.txt | 1 [32m+[m
+ 1 file changed, 1 insertion(+)
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git branch [K[K[K[K[K[K[K[K[K[K[Kcat ere[K[K[Krenamedfile.txt 
+[?2004lhello, this is a test file
+added this line to check working of --amend
+<<<<<<< HEAD
+this line is to test branch merging
+=======
+adding this line to test branching
+>>>>>>> testing
+this line to delete branch and see changes
+
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git c[Kbranch -d temp
+[?2004lDeleted branch temp (was 5923c6f).
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git branch
+[?2004l[?1h=* [32mmain[m[m
+  testing[m[m
+[K[?1l>[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git branch -v
+[?2004l[?1h=* [32mmain   [m 5923c6f [ahead 4] commit for deleting this branch[m
+  testing[m 3b73966 making a change for new branch[m
+[K[?1l>[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git branch -v[K--[Kmerged
+[?2004l[?1h=* [32mmain[m[m
+  testing[m[m
+[K[?1l>[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git branch --mergednmergedomerged-merged[C[C[C[C[C[C
+[?2004l[?1h=[K[?1l>[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git branch --move testing tes tbranch
+[?2004l[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git branch
+[?2004l[?1h=* [32mmain[m[m
+  testbranch[m[m
+[K[?1l>[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git push --set [K-upstream orign  [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kgi n testbranch
+[?2004lEnumerating objects: 5, done.
+Counting objects:  20% (1/5)Counting objects:  40% (2/5)Counting objects:  60% (3/5)Counting objects:  80% (4/5)Counting objects: 100% (5/5)Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects:  33% (1/3)Compressing objects:  66% (2/3)Compressing objects: 100% (3/3)Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/3)Writing objects:  66% (2/3)Writing objects: 100% (3/3)Writing objects: 100% (3/3), 385 bytes | 385.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'testbranch' on GitHub by visiting:[K
+remote:      https://github.com/suvidnya-tigerA/git-session/pull/new/testbranch[K
+remote: 
+To https://github.com/suvidnya-tigerA/git-session
+ * [new branch]      testbranch -> testbranch
+branch 'testbranch' set up to track 'origin/testbranch'.
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git status
+[?2004lOn branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git statuspush --set-upstream origin testbranch[A]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# [C[C[C[Cbranch[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C --move testing testbranch[A]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# [C[C[C[C[C[C[C[C[C[C[C[C[C[7Pno-merged
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Pmergedv[K[K -d tempcat renamedfile.txt [6Pgit merge tempcat renamedfile.txt [2Pgit branch -d temp[K -v-mergedno-mergedmove testing testbranch[A]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# [C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpush --set-upstream origin testbranch[A]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# [C[C[C[Cstatus[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kgit statuspush --set-upstream origin testbranch[A]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# [C[C[C[Cbranch[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C --move testing testbranch[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[C[C[C[C[C[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[Kmain master [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kr
+[?2004l[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git branch
+[?2004l[?1h=* [32mmaster[m[m
+  testbranch[m[m
+[K[?1l>[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git push --set-upstream ro[Ko[K[Korigi n master
+[?2004lEnumerating objects: 13, done.
+Counting objects:   7% (1/13)Counting objects:  15% (2/13)Counting objects:  23% (3/13)Counting objects:  30% (4/13)Counting objects:  38% (5/13)Counting objects:  46% (6/13)Counting objects:  53% (7/13)Counting objects:  61% (8/13)Counting objects:  69% (9/13)Counting objects:  76% (10/13)Counting objects:  84% (11/13)Counting objects:  92% (12/13)Counting objects: 100% (13/13)Counting objects: 100% (13/13), done.
+Delta compression using up to 8 threads
+Compressing objects:  11% (1/9)Compressing objects:  22% (2/9)Compressing objects:  33% (3/9)Compressing objects:  44% (4/9)Compressing objects:  55% (5/9)Compressing objects:  66% (6/9)Compressing objects:  77% (7/9)Compressing objects:  88% (8/9)Compressing objects: 100% (9/9)Compressing objects: 100% (9/9), done.
+Writing objects:  11% (1/9)Writing objects:  22% (2/9)Writing objects:  33% (3/9)Writing objects:  44% (4/9)Writing objects:  55% (5/9)Writing objects:  66% (6/9)Writing objects:  77% (7/9)Writing objects:  88% (8/9)Writing objects: 100% (9/9)Writing objects: 100% (9/9), 1007 bytes | 1007.00 KiB/s, done.
+Total 9 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), done.[K
+remote: 
+remote: Create a pull request for 'master' on GitHub by visiting:[K
+remote:      https://github.com/suvidnya-tigerA/git-session/pull/new/master[K
+remote: 
+To https://github.com/suvidnya-tigerA/git-session
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git branch
+[?2004l[?1h=* [32mmaster[m[m
+  testbranch[m[m
+[K[?1l>[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git push
+[?2004lEverything up-to-date
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git branch
+[?2004l[?1h=* [32mmaster[m[m
+  testbranch[m[m
+[K[?1l>[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git branch -d testbranch
+[?2004lDeleted branch testbranch (was 3b73966).
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# gi [Kt branch
+[?2004l[?1h=* [32mmaster[m[m
+[K[?1l>[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git branch rebase [Ktesting
+[?2004l[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# ls
+[?2004lREADME.md  renamedfile.txt
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# nano renamedfile.txt 
+[?2004l[?2004h[?1049h[22;0;0t[1;32r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[30;26H(B[0;7m[ Reading... ](B[m[30;25H(B[0;7m[ Read 9 lines ](B[m[H(B[0;7m  GNU nano 7.2             renamedfile.txt                      [1;63H(B[m[31d(B[0;7m^G(B[m Help     (B[0;7m^O(B[m Write Out(B[0;7m^W(B[m Where Is (B[0;7m^K(B[m Cut[49G(B[0;7m^T(B[m Execute[32d(B[0;7m^X(B[m Exit     (B[0;7m^R(B[m Read File(B[0;7m^\(B[m Replace  (B[0;7m^U(B[m Paste    (B[0;7m^J(B[m Justify[2dhello, this is a test file[3dadded this line to check working of --amend[4d<<<<<<< HEAD[5dthis line is to test branch merging[6d=======[7dadding this line to test branching[8d>>>>>>> testing[9dthis line to delete branch and see changes[2d[?12l[?25h[?25l[?12l[?25h[3d[?25l[?12l[?25h[4d[?25l[?12l[?25h[5d[?25l[?12l[?25h[6d[?25l[?12l[?25h[7d[?25l[?12l[?25h[8d[?25l[?12l[?25h[9d[?25l[?12l[?25h[9;43H[?25l[1;44H(B[0;7m*[63G(B[m[10d[?12l[?25h[?25l[?12l[?25ha[?25l[?12l[?25hd[?25l[?12l[?25hd[?25l[?12l[?25hi[?25l[?12l[?25hn[?25l[?12l[?25hg[?25l[?12l[?25ht[?25l[?12l[?25hh[?25l[?12l[?25h [?25l[?12l[?25h [?25l[30d[K[?12l[?25h[10;8H[?25l[?12l[?25ht[?25l[?12l[?25hh[?25l[?12l[?25hi[?25l[?12l[?25hs[?25l[?12l[?25h [?25l[?12l[?25hl[?25l[?12l[?25hi[?25l[?12l[?25hn[?25l[?12l[?25he[?25l[?12l[?25h [?25l[?12l[?25hf[?25l[?12l[?25ho[?25l[?12l[?25hr[?25l[?12l[?25h [?25l[?12l[?25hr[?25l[?12l[?25he[?25l[?12l[?25hb[?25l[?12l[?25ha[?25l[?12l[?25hs[?25l[?12l[?25he[?25l[?12l[?25h [?25l[?12l[?25hc[?25l[?12l[?25ho[?25l[?12l[?25hm[?25l[?12l[?25hm[?25l[?12l[?25ha[?25l[?12l[?25hn[?25l[?12l[?25hd[?25l[?12l[?25h [?25l[?12l[?25ht[?25l[?12l[?25he[?25l[?12l[?25hi[?25l[?12l[?25h [?25l[?12l[?25hs[?25l[?12l[?25ht[?25l[?12l[?25hi[?25l[?12l[?25hn[?25l[?12l[?25hg[?25l[30;26H(B[0;7m[ Writing... ](B[m[1;44H(B[0;7m [63G(B[m[30;24H(B[0;7m[ Wrote 10 lines ](B[m[?12l[?25h[10;44H[?25l[30d[J[32d[?12l[?25h[32;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git check[K[K[K[K[K[K[K[K[Knano renamedfile.txt 
+[?2004l[?2004h[?1049h[22;0;0t[1;32r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[30;26H(B[0;7m[ Reading... ](B[m[30;24H(B[0;7m[ Read 10 lines ](B[m[H(B[0;7m  GNU nano 7.2             renamedfile.txt                      [1;63H(B[m[31d(B[0;7m^G(B[m Help     (B[0;7m^O(B[m Write Out(B[0;7m^W(B[m Where Is (B[0;7m^K(B[m Cut[49G(B[0;7m^T(B[m Execute[32d(B[0;7m^X(B[m Exit     (B[0;7m^R(B[m Read File(B[0;7m^\(B[m Replace  (B[0;7m^U(B[m Paste    (B[0;7m^J(B[m Justify[2dhello, this is a test file[3dadded this line to check working of --amend[4d<<<<<<< HEAD[5dthis line is to test branch merging[6d=======[7dadding this line to test branching[8d>>>>>>> testing[9dthis line to delete branch and see changes[10dadding this line for rebase command testing[2d[?12l[?25h[?25l[30d[J[32d[?12l[?25h[32;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git checkout rebasetesting
+[?2004lM	renamedfile.txt
+Switched to branch 'rebasetesting'
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# nano git checkout rebasetesting[5Pnano renamedfile.txt 
+[?2004l[?2004h[?1049h[22;0;0t[1;32r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[30;26H(B[0;7m[ Reading... ](B[m[30;24H(B[0;7m[ Read 10 lines ](B[m[H(B[0;7m  GNU nano 7.2             renamedfile.txt                      [1;63H(B[m[31d(B[0;7m^G(B[m Help     (B[0;7m^O(B[m Write Out(B[0;7m^W(B[m Where Is (B[0;7m^K(B[m Cut[49G(B[0;7m^T(B[m Execute[32d(B[0;7m^X(B[m Exit     (B[0;7m^R(B[m Read File(B[0;7m^\(B[m Replace  (B[0;7m^U(B[m Paste    (B[0;7m^J(B[m Justify[2dhello, this is a test file[3dadded this line to check working of --amend[4d<<<<<<< HEAD[5dthis line is to test branch merging[6d=======[7dadding this line to test branching[8d>>>>>>> testing[9dthis line to delete branch and see changes[10dadding this line for rebase command testing[2d[?12l[?25h[?25l[30d[J[32d[?12l[?25h[32;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git status
+[?2004lOn branch rebasetesting
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   renamedfile.txt[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git restore renamedfile.txt 
+[?2004l[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# nan[K[K[Kgit checkoiut [K[K[K[Kut master
+[?2004lSwitched to branch 'master'
+Your branch is up to date with 'origin/master'.
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# nano renamedfile.txt 
+[?2004l[?2004h[?1049h[22;0;0t[1;32r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[30;26H(B[0;7m[ Reading... ](B[m[30;25H(B[0;7m[ Read 9 lines ](B[m[H(B[0;7m  GNU nano 7.2             renamedfile.txt                      [1;63H(B[m[31d(B[0;7m^G(B[m Help     (B[0;7m^O(B[m Write Out(B[0;7m^W(B[m Where Is (B[0;7m^K(B[m Cut[49G(B[0;7m^T(B[m Execute[32d(B[0;7m^X(B[m Exit     (B[0;7m^R(B[m Read File(B[0;7m^\(B[m Replace  (B[0;7m^U(B[m Paste    (B[0;7m^J(B[m Justify[2dhello, this is a test file[3dadded this line to check working of --amend[4d<<<<<<< HEAD[5dthis line is to test branch merging[6d=======[7dadding this line to test branching[8d>>>>>>> testing[9dthis line to delete branch and see changes[2d[?12l[?25h[?25l[30d[J[32d[?12l[?25h[32;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# nano renamedfile.txt [2Pgit checkout master
+[?2004lAlready on 'master'
+Your branch is up to date with 'origin/master'.
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# nano rena
+[?2004l[?2004h[?1049h[22;0;0t[1;32r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[30;27H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 7.2                  rena                            [1;63H(B[m[31d(B[0;7m^G(B[m Help     (B[0;7m^O(B[m Write Out(B[0;7m^W(B[m Where Is (B[0;7m^K(B[m Cut[49G(B[0;7m^T(B[m Execute[32d(B[0;7m^X(B[m Exit     (B[0;7m^R(B[m Read File(B[0;7m^\(B[m Replace  (B[0;7m^U(B[m Paste    (B[0;7m^J(B[m Justify[2d[?12l[?25h[?25l[30;20H(B[0;1m[37m[41m[ To suspend, type ^T^Z ][39;49m(B[m[?12l[?25h[2d[?25l[30d[J[32d[?12l[?25h[32;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# nano renamedfile.txt 
+[?2004l[?2004h[?1049h[22;0;0t[1;32r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[30;26H(B[0;7m[ Reading... ](B[m[30;25H(B[0;7m[ Read 9 lines ](B[m[H(B[0;7m  GNU nano 7.2             renamedfile.txt                      [1;63H(B[m[31d(B[0;7m^G(B[m Help     (B[0;7m^O(B[m Write Out(B[0;7m^W(B[m Where Is (B[0;7m^K(B[m Cut[49G(B[0;7m^T(B[m Execute[32d(B[0;7m^X(B[m Exit     (B[0;7m^R(B[m Read File(B[0;7m^\(B[m Replace  (B[0;7m^U(B[m Paste    (B[0;7m^J(B[m Justify[2dhello, this is a test file[3dadded this line to check working of --amend[4d<<<<<<< HEAD[5dthis line is to test branch merging[6d=======[7dadding this line to test branching[8d>>>>>>> testing[9dthis line to delete branch and see changes[2d[?12l[?25h[?25l[?12l[?25h[3d[?25l[?12l[?25h[4d[?25l[?12l[?25h[5d[?25l[?12l[?25h[6d[?25l[?12l[?25h[7d[?25l[?12l[?25h[8d[?25l[?12l[?25h[8;16H[?25l[?12l[?25h[9d[?25l[?12l[?25h[9;43H[?25l[1;44H(B[0;7m*[63G(B[m[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[?12l[?25ha[?25l[?12l[?25hd[?25l[?12l[?25hd[?25l[?12l[?25hi[?25l[?12l[?25hn[?25l[?12l[?25hg[?25l[?12l[?25h [?25l[?12l[?25ht[?25l[30d[K[?12l[?25h[11;9Hh[?25l[?12l[?25hi[?25l[?12l[?25hs[?25l[?12l[?25h [?25l[?12l[?25hl[?25l[?12l[?25hn[?25l[?12l[?25h [?25l[?12l[?25hi[?25l[?12l[?25he[?25l[?12l[?25hn[?25l[?12l[?25h [?25l[?12l[?25ht[?25l[?12l[?25ho[?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25hn[?25l[?12l[?25he[?25l[?12l[?25h [?25l[?12l[?25ht[?25l[?12l[?25ho[?25l[?12l[?25h [?25l[?12l[?25hs[?25l[?12l[?25he[?25l[?12l[?25he[?25l[?12l[?25h [?25l[?12l[?25hh[?25l[?12l[?25ho[?25l[?12l[?25hw[?25l[?12l[?25h [?25l[?12l[?25hr[?25l[?12l[?25he[?25l[?12l[?25hb[?25l[?12l[?25ha[?25l[?12l[?25hs[?25l[?12l[?25he[?25l[?12l[?25h [?25l[?12l[?25hw[?25l[?12l[?25ho[?25l[?12l[?25hr[?25l[?12l[?25hk[?25l[?12l[?25hs[?25l[30d(B[0;7mSave modified buffer?                                           [31;1H Y(B[m Yes[K[32d(B[0;7m N(B[m No           (B[0;7m^C(B[m Cancel[K[30;23H[?12l[?25h[?25l  [1K (B[0;7m[ Cancelled ](B[m[K[31d(B[0;7m^G(B[m Help     (B[0;7m^O(B[m Write Out(B[0;7m^W(B[m Where Is (B[0;7m^K(B[m Cut[49G(B[0;7m^T(B[m Execute[32d(B[0;7m^X(B[m Exit     (B[0;7m^R(B[m Read File(B[0;7m^\(B[m Replace  (B[0;7m^U(B[m Paste    (B[0;7m^J(B[m Justify[?12l[?25h[11;41H[?25l[30;28H(B[0;7mWriting... ](B[m[1;44H(B[0;7m [63G(B[m[30;24H(B[0;7m[ Wrote 11 lines ](B[m[?12l[?25h[11;41H[?25l[30d[J[32d[?12l[?25h[32;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# nano renamedfile.txt 
+[?2004l[?2004h[?1049h[22;0;0t[1;32r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[30;26H(B[0;7m[ Reading... ](B[m[30;24H(B[0;7m[ Read 11 lines ](B[m[H(B[0;7m  GNU nano 7.2             renamedfile.txt                      [1;63H(B[m[31d(B[0;7m^G(B[m Help     (B[0;7m^O(B[m Write Out(B[0;7m^W(B[m Where Is (B[0;7m^K(B[m Cut[49G(B[0;7m^T(B[m Execute[32d(B[0;7m^X(B[m Exit     (B[0;7m^R(B[m Read File(B[0;7m^\(B[m Replace  (B[0;7m^U(B[m Paste    (B[0;7m^J(B[m Justify[2dhello, this is a test file[3dadded this line to check working of --amend[4d<<<<<<< HEAD[5dthis line is to test branch merging[6d=======[7dadding this line to test branching[8d>>>>>>> testing[9dthis line to delete branch and see changes[11dadding this line to see how rebase works[2d[?12l[?25h[?25l[30d[J[32d[?12l[?25h[32;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git check[K[K[K[K[K[K[K[K[Kgit commit -a -m "t [Ko check re basign [K[K[Kng"
+[?2004l[master 15d84c6] to check rebasing
+ 1 file changed, 2 insertions(+)
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git checkout rebasetesting
+[?2004lSwitched to branch 'rebasetesting'
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# nano renamedfile.txt 
+[?2004l[?2004h[?1049h[22;0;0t[1;32r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[30;26H(B[0;7m[ Reading... ](B[m[30;25H(B[0;7m[ Read 9 lines ](B[m[H(B[0;7m  GNU nano 7.2             renamedfile.txt                      [1;63H(B[m[31d(B[0;7m^G(B[m Help     (B[0;7m^O(B[m Write Out(B[0;7m^W(B[m Where Is (B[0;7m^K(B[m Cut[49G(B[0;7m^T(B[m Execute[32d(B[0;7m^X(B[m Exit     (B[0;7m^R(B[m Read File(B[0;7m^\(B[m Replace  (B[0;7m^U(B[m Paste    (B[0;7m^J(B[m Justify[2dhello, this is a test file[3dadded this line to check working of --amend[4d<<<<<<< HEAD[5dthis line is to test branch merging[6d=======[7dadding this line to test branching[8d>>>>>>> testing[9dthis line to delete branch and see changes[2d[?12l[?25h[?25l[30d[J[32d[?12l[?25h[32;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# nano renamedfile.txt 
+[?2004l[?2004h[?1049h[22;0;0t[1;32r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[30;26H(B[0;7m[ Reading... ](B[m[30;25H(B[0;7m[ Read 9 lines ](B[m[H(B[0;7m  GNU nano 7.2             renamedfile.txt                      [1;63H(B[m[31d(B[0;7m^G(B[m Help     (B[0;7m^O(B[m Write Out(B[0;7m^W(B[m Where Is (B[0;7m^K(B[m Cut[49G(B[0;7m^T(B[m Execute[32d(B[0;7m^X(B[m Exit     (B[0;7m^R(B[m Read File(B[0;7m^\(B[m Replace  (B[0;7m^U(B[m Paste    (B[0;7m^J(B[m Justify[2dhello, this is a test file[3dadded this line to check working of --amend[4d<<<<<<< HEAD[5dthis line is to test branch merging[6d=======[7dadding this line to test branching[8d>>>>>>> testing[9dthis line to delete branch and see changes[2d[?12l[?25h[?25l[?12l[?25h[3d[?25l[?12l[?25h[4d[?25l[?12l[?25h[5d[?25l[?12l[?25h[6d[?25l[?12l[?25h[7d[?25l[?12l[?25h[8d[?25l[?12l[?25h[9d[?25l[?12l[?25h[9;43H[?25l[1;44H(B[0;7m*[63G(B[m[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[?12l[?25ha[?25l[?12l[?25hd[?25l[?12l[?25hd[?25l[?12l[?25hi[?25l[?12l[?25hn[?25l[?12l[?25hg[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[30d[K[?12l[?25h[11dad [?25l[?12l[?25h [?25l[?12l[?25h[K[?25l[?12l[?25h-[?25l[?12l[?25h-[?25l[?12l[?25h-[?25l[?12l[?25h-[?25l[?12l[?25h-[?25l[?12l[?25h [?25l[?12l[?25hT[?25l[?12l[?25hh[?25l[?12l[?25hi[?25l[?12l[?25hs[?25l[?12l[?25h [?25l[?12l[?25hl[?25l[?12l[?25hi[?25l[?12l[?25hn[?25l[?12l[?25he[?25l[?12l[?25h [?25l[?12l[?25ht[?25l[?12l[?25ho[?25l[?12l[?25h [?25l[?12l[?25hc[?25l[?12l[?25hr[?25l[?12l[?25he[?25l[?12l[?25ha[?25l[?12l[?25ht[?25l[?12l[?25he[?25l[?12l[?25h [?25l[?12l[?25ht[?25l[?12l[?25hw[?25l[?12l[?25ho[?25l[?12l[?25h [?25l[?12l[?25hw[?25l[?12l[?25ha[?25l[?12l[?25hy[?25l[?12l[?25h [?25l[?12l[?25hb[?25l[?12l[?25hr[?25l[?12l[?25ha[?25l[?12l[?25hn[?25l[?12l[?25hc[?25l[?12l[?25hh[?25l[?12l[?25h [?25l[?12l[?25hi[?25l[?12l[?25h [?25l[?12l[?25hs[?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25hs[?25l[?12l[?25h [?25l[?12l[?25hb[?25l[?12l[?25hr[?25l[?12l[?25ha[?25l[?12l[?25hn[?25l[?12l[?25hc[?25l[?12l[?25hh[?25l[?12l[?25he[?25l[?12l[?25hs[?25l[?12l[?25h [?25l[?12l[?25hc[?25l[?12l[?25ho[?25l[?12l[?25hn[?25l[?12l[?25he[?25l[?12l[?25h [?25l[?12l[?25hc[?25l[?12l[?25he[?25l[?12l[?25hp[?25l[?12l[?25ht[?25l[12d[?12l[?25h[?25l[?12l[?25ht[?25l[?12l[?25ho[?25l[?12l[?25h [?25l[?12l[?25ht[?25l[?12l[?25he[?25l[?12l[?25hs[?25l[?12l[?25ht[?25l[?12l[?25h [?25l[?12l[?25hb[?25l[?12l[?25h [?25l[?12l[?25hr[?25l[?12l[?25he[?25l[?12l[?25hb[?25l[?12l[?25hs[?25l[?12l[?25ha[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25ha[?25l[?12l[?25hs[?25l[?12l[?25hi[?25l[?12l[?25hn[?25l[?12l[?25hg[?25l[30;26H(B[0;7m[ Writing... ](B[m[1;44H(B[0;7m [63G(B[m[30;24H(B[0;7m[ Wrote 12 lines ](B[m[?12l[?25h[12;17H[?25l[30d[J[32d[?12l[?25h[32;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git che[K[K[K[K[Kt rebase msas[K[K[Kaster
+[?2004lerror: cannot rebase: You have unstaged changes.
+error: Please commit or stash them.
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# gi [Kt commit -a -m "rebase test ing"
+[?2004l[rebasetesting 078541c] rebase testing
+ 1 file changed, 3 insertions(+)
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git commit -a -m "rebase testing"[A]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# [C[C[C[C[12Prebase master
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lRebasing (1/1)Auto-merging renamedfile.txt
+CONFLICT (content): Merge conflict in renamedfile.txt
+error: could not apply 078541c... rebase testing
+[33mhint: Resolve all conflicts manually, mark them as resolved with[m
+[33mhint: "git add/rm <conflicted_files>", then run "git rebase --continue".[m
+[33mhint: You can instead skip this commit: run "git rebase --skip".[m
+[33mhint: To abort and get back to the state before "git rebase", run "git rebase --abort".[m
+Could not apply 078541c... rebase testing
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git status
+[?2004l[31minteractive rebase in progress; onto [m15d84c6
+Last command done (1 command done):
+   pick 078541c rebase testing
+No commands remaining.
+You are currently rebasing branch 'rebasetesting' on '15d84c6'.
+  (fix conflicts and then run "git rebase --continue")
+  (use "git rebase --skip" to skip this patch)
+  (use "git rebase --abort" to check out the original branch)
+
+Unmerged paths:
+  (use "git restore --staged <file>..." to unstage)
+  (use "git add <file>..." to mark resolution)
+	[31mboth modified:   renamedfile.txt[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git co[K[Kadd .
+[?2004l[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git commit -m "testing reab[K[Kbase "
+[?2004l[detached HEAD 9c5719a] testing rebase
+ 1 file changed, 5 insertions(+)
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git status
+[?2004l[31minteractive rebase in progress; onto [m15d84c6
+Last command done (1 command done):
+   pick 078541c rebase testing
+No commands remaining.
+You are currently editing a commit while rebasing branch 'rebasetesting' on '15d84c6'.
+  (use "git commit --amend" to amend the current commit)
+  (use "git rebase --continue" once you are satisfied with your changes)
+
+nothing to commit, working tree clean
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git rebase master
+[?2004lfatal: It seems that there is already a rebase-merge directory, and
+I wonder if you are in the middle of another rebase.  If that is the
+case, please try
+	git rebase (--continue | --abort | --skip)
+If that is not the case, please
+	rm -fr ".git/rebase-merge"
+and run me again.  I am stopping in case you still have something
+valuable there.
+
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git checkout master
+[?2004lWarning: you are leaving 1 commit behind, not connected to
+any of your branches:
+
+  9c5719a testing rebase
+
+If you want to keep it by creating a new branch, this may be a good time
+to do so with:
+
+ git branch <new-branch-name> 9c5719a
+
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# nano renamedfile.txt 
+[?2004l[?2004h[?1049h[22;0;0t[1;32r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[30;26H(B[0;7m[ Reading... ](B[m[30;24H(B[0;7m[ Read 11 lines ](B[m[H(B[0;7m  GNU nano 7.2             renamedfile.txt                      [1;63H(B[m[31d(B[0;7m^G(B[m Help     (B[0;7m^O(B[m Write Out(B[0;7m^W(B[m Where Is (B[0;7m^K(B[m Cut[49G(B[0;7m^T(B[m Execute[32d(B[0;7m^X(B[m Exit     (B[0;7m^R(B[m Read File(B[0;7m^\(B[m Replace  (B[0;7m^U(B[m Paste    (B[0;7m^J(B[m Justify[2dhello, this is a test file[3dadded this line to check working of --amend[4d<<<<<<< HEAD[5dthis line is to test branch merging[6d=======[7dadding this line to test branching[8d>>>>>>> testing[9dthis line to delete branch and see changes[11dadding this line to see how rebase works[2d[?12l[?25h[?25l[30d[J[32d[?12l[?25h[32;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git chenano renamedfile.txt [2Pgit checkout master
+[?2004lAlready on 'master'
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git merge be[K[Krebb[Kase tes[K[K[K[Ktesting
+[?2004lAuto-merging renamedfile.txt
+CONFLICT (content): Merge conflict in renamedfile.txt
+Automatic merge failed; fix conflicts and then commit the result.
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git status
+[?2004lOn branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Last command done (1 command done):
+   pick 078541c rebase testing
+No commands remaining.
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+	[31mboth modified:   renamedfile.txt[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# f[Kgit add .
+[?2004l[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git commit
+[?2004lhint: Waiting for your editor to close the file... [?2004h[?1049h[22;0;0t[1;32r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[30;26H(B[0;7m[ Reading... ](B[m[30;24H(B[0;7m[ Read 27 lines ](B[m[H(B[0;7m      /root/git-session-clone/.git/COMMIT_EDITMSG               [1;63H(B[m[31d(B[0;7m^G(B[m Help     (B[0;7m^O(B[m Write Out(B[0;7m^W(B[m Where Is (B[0;7m^K(B[m Cut[49G(B[0;7m^T(B[m Execute[32d(B[0;7m^X(B[m Exit     (B[0;7m^R(B[m Read File(B[0;7m^\(B[m Replace  (B[0;7m^U(B[m Paste    (B[0;7m^J(B[m Justify[2dMerge branch 'rebasetesting'[4d[36m# Conflicts:[5d#[38;5;208m       [36mrenamedfile.txt[6d#[7d# It looks like you may be committing a merge.[8d# If this is not correct, please run[9d#[38;5;208m       [36mgit update-ref -d MERGE_HEAD[10d# and try again.[13d# Please enter the commit message for your changes. Lines start[39m(B[0;7m>[14;1H(B[0m[36m# with '#' will be ignored, and an empty message aborts the com[39m(B[0;7m>[15;1H(B[0m[36m#[16d# On branch master[17d# Your branch is ahead of 'origin/master' by 1 commit.[18d#   (use "git push" to publish your local commits)[19d#[20d# Last command done (1 command done):[21d#    pick 078541c rebase testing[22d# No commands remaining.[24d# All conflicts fixed but you are still merging.[25d#[26d# Changes to be committed:[27d#[38;5;208m       [36mmodified:   renamedfile.txt[28d#[2d[39m(B[m[?12l[?25h[?25l[1;51H(B[0;7m*[63G(B[m7[2;29r8[2dM[1;32r[3;1H[?12l[?25h[?25l[30;24H  (B[0;7m[ Writing... ](B[m[K[1;51H(B[0;7m [63G(B[m[30;24H(B[0;7m[ Wrote 28 lines ](B[m[?12l[?25h[3d[?25l[1;51H(B[0;7m*[63G(B[m7[2;29r8[2dM[1;32r[4;1H[?12l[?25h[?25l[30d(B[0;7mSave modified buffer?                                           [31;1H Y(B[m Yes[K[32d(B[0;7m N(B[m No           (B[0;7m^C(B[m Cancel[K[30;23H[?12l[?25h[?25l[31d(B[0;7m^G(B[m Help[31;17H(B[0;7mM-D(B[m DOS Format  (B[0;7mM-A(B[m Append[49G(B[0;7mM-B(B[m Backup File[32d(B[0;7m^C(B[m Cancel[17G(B[0;7mM-M(B[m Mac Format  (B[0;7mM-P(B[m Prepend     (B[0;7m^T(B[m Browse[30d(B[0;7mFile Name to Write:<G(B[m[?12l[?25h[?25l   [1K (B[0;7m[ Cancelled ](B[m[K[31;13H(B[0;7m^O(B[m Write Out(B[0;7m^W(B[m Where Is (B[0;7m^K(B[m Cut[49G(B[0;7m^T(B[m Execute[K[32;2H(B[0;7mX(B[m Exit     (B[0;7m^R(B[m Read File(B[0;7m^\(B[m Replace  (B[0;7m^U(B[m Paste    (B[0;7m^J(B[m Justify[?12l[?25h[4d[?25l[?12l[?25hYMerge branch 'rebasetesting'Y[?25l[?12l[?25h[1P[?25l[30;28H(B[0;7mWriting... ](B[m[1;51H(B[0;7m [63G(B[m[30;24H(B[0;7m[ Wrote 29 lines ](B[m[?12l[?25h[4d[?25l[30d[J[32d[?12l[?25h[32;1H[?1049l[23;0;0t[?1l>[?2004l[K[master 147e099] Merge branch 'rebasetesting'
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git checkot[Kut master
+[?2004lAlready on 'master'
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git [K[K[K[Knano renamedfile.txt 
+[?2004l[?2004h[?1049h[22;0;0t[1;32r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[30;26H(B[0;7m[ Reading... ](B[m[30;24H(B[0;7m[ Read 16 lines ](B[m[H(B[0;7m  GNU nano 7.2             renamedfile.txt                      [1;63H(B[m[31d(B[0;7m^G(B[m Help     (B[0;7m^O(B[m Write Out(B[0;7m^W(B[m Where Is (B[0;7m^K(B[m Cut[49G(B[0;7m^T(B[m Execute[32d(B[0;7m^X(B[m Exit     (B[0;7m^R(B[m Read File(B[0;7m^\(B[m Replace  (B[0;7m^U(B[m Paste    (B[0;7m^J(B[m Justify[2dhello, this is a test file[3dadded this line to check working of --amend[4d<<<<<<< HEAD[5dthis line is to test branch merging[6d=======[7dadding this line to test branching[8d>>>>>>> testing[9dthis line to delete branch and see changes[11d<<<<<<< HEAD[12dadding this line to see how rebase works[13d=======[14d----- This line to create two way branch is branches concept[15dto test rebasing[16d>>>>>>> rebasetesting[2d[?12l[?25h[?25l[30d[J[32d[?12l[?25h[32;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# clear
+[?2004l[H[2J[3J[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git gui
+[?2004lfatal: 'gui' appears to be a git command, but we were not
+able to execute it. Maybe git-gui is broken?
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git-gui
+[?2004lCommand 'git-gui' not found, did you mean:
+  command 'git-tui' from snap git-tui (1.2.0)
+See 'snap info <snapname>' for additional versions.
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# gitk [git log options]
+[?2004lCommand 'gitk' not found, but can be installed with:
+apt install gitk
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# git push
+[?2004lEnumerating objects: 23, done.
+Counting objects:   4% (1/23)Counting objects:   8% (2/23)Counting objects:  13% (3/23)Counting objects:  17% (4/23)Counting objects:  21% (5/23)Counting objects:  26% (6/23)Counting objects:  30% (7/23)Counting objects:  34% (8/23)Counting objects:  39% (9/23)Counting objects:  43% (10/23)Counting objects:  47% (11/23)Counting objects:  52% (12/23)Counting objects:  56% (13/23)Counting objects:  60% (14/23)Counting objects:  65% (15/23)Counting objects:  69% (16/23)Counting objects:  73% (17/23)Counting objects:  78% (18/23)Counting objects:  82% (19/23)Counting objects:  86% (20/23)Counting objects:  91% (21/23)Counting objects:  95% (22/23)Counting objects: 100% (23/23)Counting objects: 100% (23/23), done.
+Delta compression using up to 8 threads
+Compressing objects:   4% (1/21)Compressing objects:   9% (2/21)Compressing objects:  14% (3/21)Compressing objects:  19% (4/21)Compressing objects:  23% (5/21)Compressing objects:  28% (6/21)Compressing objects:  33% (7/21)Compressing objects:  38% (8/21)Compressing objects:  42% (9/21)Compressing objects:  47% (10/21)Compressing objects:  52% (11/21)Compressing objects:  57% (12/21)Compressing objects:  61% (13/21)Compressing objects:  66% (14/21)Compressing objects:  71% (15/21)Compressing objects:  76% (16/21)Compressing objects:  80% (17/21)Compressing objects:  85% (18/21)Compressing objects:  90% (19/21)Compressing objects:  95% (20/21)Compressing objects: 100% (21/21)Compressing objects: 100% (21/21), done.
+Writing objects:   4% (1/21)Writing objects:  14% (3/21)Writing objects:  19% (4/21)Writing objects:  23% (5/21)Writing objects:  33% (7/21)Writing objects:  38% (8/21)Writing objects:  42% (9/21)Writing objects:  47% (10/21)Writing objects:  52% (11/21)Writing objects:  57% (12/21)Writing objects:  61% (13/21)Writing objects:  66% (14/21)Writing objects:  71% (15/21)Writing objects:  76% (16/21)Writing objects:  80% (17/21)Writing objects:  85% (18/21)Writing objects:  90% (19/21)Writing objects:  95% (20/21)Writing objects: 100% (21/21)Writing objects: 100% (21/21), 2.03 KiB | 694.00 KiB/s, done.
+Total 21 (delta 8), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas:   0% (0/8)[Kremote: Resolving deltas:  12% (1/8)[Kremote: Resolving deltas:  25% (2/8)[Kremote: Resolving deltas:  37% (3/8)[Kremote: Resolving deltas:  50% (4/8)[Kremote: Resolving deltas:  62% (5/8)[Kremote: Resolving deltas:  75% (6/8)[Kremote: Resolving deltas:  87% (7/8)[Kremote: Resolving deltas: 100% (8/8)[Kremote: Resolving deltas: 100% (8/8), done.[K
+remote: 
+remote: Create a pull request for 'master' on GitHub by visiting:[K
+remote:      https://github.com/suvidnya-tigerA/git-session/pull/new/master[K
+remote: 
+To https://github.com/suvidnya-tigerA/git-session
+ * [new branch]      master -> master
+[?2004h]0;root@Suvidnya: ~/git-session-cloneroot@Suvidnya:~/git-session-clone# cd ..
+[?2004l[?2004h]0;root@Suvidnya: ~root@Suvidnya:~# exit
+[?2004lexit
+
+Script done on 2024-10-03 23:35:51+05:30 [COMMAND_EXIT_CODE="0"]
